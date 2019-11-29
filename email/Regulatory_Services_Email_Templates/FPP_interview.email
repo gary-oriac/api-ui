@@ -1,0 +1,12 @@
+<p>Dear {!arcusregserv__RS_Activity__c.arcusregserv__Contact__r.Salutation} {!arcusregserv__RS_Activity__c.arcusregserv__Contact__r.FirstName} {!arcusregserv__RS_Activity__c.arcusregserv__Contact__r.LastName}
+
+
+<p>Thank you for submitting your application for selective licensing of {!arcusregserv__RS_Activity__c.arcusregserv__Licence_Record_Type__c}.
+
+<p>Further information is needed before a decision can be made regarding the fit and proper person section of the application, and you will need to attend a meeting to discuss this further
+
+<p>An appointment has been made for you on {!Today} at Bayard Place, Broadway, Peterborough. If this is not convenient please contact the case officer for an alternative date and time.
+ 
+<p>Yours sincerely
+<br>Housing Enforcement Team
+<br>Peterborough City Council

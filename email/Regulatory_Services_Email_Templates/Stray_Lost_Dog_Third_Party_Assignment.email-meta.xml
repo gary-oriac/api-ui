@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Third Party Dog Controller&apos;s Stray/Lost Dog Third Party Assignment notification.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Stray/Lost Dog Third Party Assignment</name>
+    <style>none</style>
+    <subject>Dog complaint</subject>
+    <textOnly>Dear {!Account.Name},
+
+Please note that a Stray/Lost Dog, {!arcusregserv__RS_Activity__c.Name} has been assigned to you.  
+
+Kind Regards, 
+
+ {!User.Name} 
+{!User.Title}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

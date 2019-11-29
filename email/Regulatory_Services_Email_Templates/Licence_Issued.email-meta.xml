@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Licence Issued</name>
+    <style>none</style>
+    <subject>{!arcusregserv__RS_Licence__c.RecordType} Issued</subject>
+    <textOnly>Dear {!Contact.Name},
+
+We are pleased to inform you we have granted your request for a {!arcusregserv__RS_Licence__c.RecordType}. It will expire on {!arcusregserv__RS_Licence__c.arcusregserv__End_Date_Granted__c}.
+
+Best regards,
+{!User.Name}
+{!User.Title}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

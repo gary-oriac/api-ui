@@ -1,0 +1,4328 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayouts>
+        <fullName>BE_Historic_Asset</fullName>
+        <fields>Name</fields>
+        <fields>RecordTypeId</fields>
+        <fields>Status</fields>
+        <fields>arcusbuiltenv__Date_First_Registered__c</fields>
+        <fields>arcusbuiltenv__Occupancy__c</fields>
+        <label>BE Historic Asset</label>
+    </compactLayouts>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AssetLevel</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AssetProvidedById</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AssetServicedById</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>InstallDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsCompetitorProduct</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsInternal</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Price</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Product2Id</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+    </fields>
+    <fields>
+        <fullName>ProductDescription</fullName>
+    </fields>
+    <fields>
+        <fullName>ProductFamily</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>PurchaseDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Quantity</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Quantity__c</fullName>
+        <description>The quantity of assets this record refers to</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The quantity of assets this record refers to</inlineHelpText>
+        <label>Quantity</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RootAssetId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SerialNumber</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>StockKeepingUnit</fullName>
+    </fields>
+    <fields>
+        <fullName>UsageEndDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <compactLayoutAssignment>BE_Historic_Asset</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <searchLayouts>
+        <customTabListAdditionalFields>ASSET.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ASSET.SERIAL_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ASSET.INSTALL_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.NAME</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ASSET.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ASSET.SERIAL_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ASSET.INSTALL_DATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ASSET.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ASSET.SERIAL_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ASSET.INSTALL_DATE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.NAME</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>ASSET.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ASSET.SERIAL_NUMBER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ASSET.INSTALL_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.NAME</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <listViews>
+        <fullName>AllAssets</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Assets</label>
+    </listViews>
+    <recordTypes>
+        <fullName>Historic_Parks_and_Gardens</fullName>
+        <active>true</active>
+        <description>FHDC requested addition</description>
+        <label>Historic Parks and Gardens</label>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Delisted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demolished</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Listed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Category__c</picklist>
+            <values>
+                <fullName>Areas of trees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Groups of trees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual tree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parkland areas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Woodland areas</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Condition__c</picklist>
+            <values>
+                <fullName>Fair</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Poor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Criteria__c</picklist>
+            <values>
+                <fullName>Age</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Architectural Interest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communal Value</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Group Value</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Historic Interest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landmark Quality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landscape Quality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Potential</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rarity or Representativeness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Survival</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Group__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Latin_Name__c</picklist>
+            <values>
+                <fullName>Betula pendula</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Frangula alnus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fraxinus excelsior</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Listed_Building_Grade__c</picklist>
+            <values>
+                <fullName>Grade I</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grade II</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grade II*</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Occupancy__c</picklist>
+            <values>
+                <fullName>Occupied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unoccupied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Species__c</picklist>
+            <values>
+                <fullName>Alder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Alder Buckthorn</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aspen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Black Thorn</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coast Redwood</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Copper Beech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Crabapple</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Douglas Fir</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Downy Birch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Elder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Elm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>English Oak</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Maple</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grand Fir</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grey Willow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guelder Rose</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hawthorn</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hazel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Holly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Holm Oak</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hornbeam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Horse Chestnut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Larch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Norway Spruce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oak %28English%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oak %28Holm%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oak %28Sessile%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oak %28Turkey%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pussy Willow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rhododendron</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rowan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scots Pine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sessile Oak</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silver Birch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sitka Spruce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spindle Tree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sugar Maple</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sweet Chestnut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sycamore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Turkey Oak</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wayfaring Tree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Western Hemlock</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White Poplar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wild Service Tree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wych Elm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yew</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Type__c</picklist>
+            <values>
+                <fullName>Areas of trees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Groups of trees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual tree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parkland areas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Woodland areas</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusregserv__Class__c</picklist>
+            <values>
+                <fullName>Class I</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Class II</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Class III</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Class IIII</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Class IIIII</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusregserv__Type__c</picklist>
+            <values>
+                <fullName>120L Bin for Trade waste</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>240 Litre Bin for Trade Waste</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>360 Litre Bin for Trade Waste</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AEA Aeration All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AEP Aeration Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AFA Aluminium is used as a flocculent All of the Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AFP Aluminium is used as a flocculent Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Abrasive Wheels %28Garage%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Abrasive Wheels %28Metalworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Abrasive Wheels %28Shoe Repair%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amplification Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Area Measuring Instruments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aron- Ali Furnace</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Automatic Weighing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BLA Blending All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BLP Blending Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bacon Slicer%2FFood Slicer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Baffle %28Arrestment Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bag %28Arrestment Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Baine Maries</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Band Saw %28Woodworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bandsaw %28Metalworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Black Bags</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blast Chiller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blast Freezer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Boilers %28Launderette%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brat Pan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bulk Liquid Fuel Flowmeters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CDA Chlorine Dioxide</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CDP Chlorine Dioxide Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFA Chloramination All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFP Chloramination Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CLA Chlorination All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CLP Chlorination Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COA coagulation All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COP coagulation Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cages</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Capacity Measures</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Checkweighers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chest Freezer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Circular Saw</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Circular Saw %28Metal working%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinical Waste Bags</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Combination Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Combination Woodworker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compressor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compressors%2FBoiler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cont Band or Strip Saw</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conveyor Belts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cooler%2FCondensor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cooling Tower HSE Responsible</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cooling Tower LA Responsible</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cross Cut Saw</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Crucible</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cubic Measures</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cupola %28Cold%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cupola %28Hot%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cyclone %28Arrestment Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Diesel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dipstick Measuring Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disco</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Display Freezer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Doner Kebabs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dough Brakes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dough Mixers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Drilling Machines %28Metal%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Drills %28Woodworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dry Cleaners</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dryers %28Launderette%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dumb Waiter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ESP %28Arrestment Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electric Arc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electric Metal Melting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emergency Lighting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Empty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enclosure %28Attenuation Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escalator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Fire Escape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Extraction %28Woodworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FDA fluoride dosing All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FDP fluoride dosing Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fire Alarm BS 5446</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fire Alarm BS 5839</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fire Blanket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fire Extinguisher %28AFFF%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fire Extinguisher %28Dry Powder%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fire Extinguishers %28Water%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fire Hose</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flame Cutting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flashback Arrestors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fork Lift Truck Rider Operated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fork Lift Truck- Pedestrian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fridge Freezers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Front Loading Washing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fuel %26 Vapour Containment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Site Layout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Generator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goods Lift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grinding Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guillotine %28Metalworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guillotines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCA hypochlorite added All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP hypochlorite added Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hard Foam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hazard Type 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hazard Type 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hazard Type 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hazard Type 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High Speed Routers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home Lift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hydro Extraction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IEA ion exchange All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IEP ion exchange Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IFA Iron is used as a flocculent All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IFP Iron is used as a flocculent Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inflation Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Infra Red Dryers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intox Liquor Mls - Beer Meters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intox Liquor Mls - Spirits</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Isolation %28Attenuation Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jacuzzi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kerosene</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Key Cutting Machine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LPG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LPG Meter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lathe %28Metal working%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Liquid Fuel Flowmeters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live Music</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MFA Membrane filtration All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MFP Membrane filtration Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MNA Managanese filtrtation All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MNP Managanese filtrtation Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Measures of Length</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Measuring Container Bottles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meat Mincing Machines etc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Weighing Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Microwaves</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mig %26 Tig</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Milling Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mixing Machines %26 Attachments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mortsing Machine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multiple Rip Saw%2FStraight Edge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N OTHER treatment methods not stated already NO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NFA Nitrate filtration All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NFP Nitrate filtration Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nail Guns</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OXA Oxidation All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OXP Oxidation Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Office Chair - Gas Filled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Pickers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Arrestment Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other W %26 M Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overhead Cranes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oxy-Acetylene</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDA phosphate dosing All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDP phosphate dosing Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHA PH correction All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHP PH correction Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paladin for Trade Waste</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pallet Trucks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Passenger Lift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Person Weighing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Petroleum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Petroleum Mixtures</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Photocopiers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pie Warming Cabinets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pie%2FTart Making Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pneumatic Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pot %28Metal Melting%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Potato Chipping Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Power Operated Doors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Power Press %28Metalworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presses %28Launderette%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presses %28Shoe Repair%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RCCBs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recycling Bin A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refrigerated Display Cabinet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regulators</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rotary Knife Bowl Chopping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rotisseries</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEA Settlement All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEP Settlement Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SIA water originates from or is influenced by surface water All of Sup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SIP water originates from or is influenced by surface water Part of Su</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sanders %28Woodworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sauna</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scissor Lift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scrubber %28Arrestment Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shaping%2FPlaning Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shot Blasting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Showers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silencer %28Attenuation Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Slurry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Smoke Doors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spillage Containment%2FDrainage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stair Lift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stationary Cranes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steam Cabinet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steam Room</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stitching Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sunbeds</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Swimming Pools</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Taylor 4 Wheel Bin Trade Waste</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Teagle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Templets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Top Loading washing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trolleys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tyre Pressure Gauges</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tyre Pressure Guages</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tyre Removal Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UVA Ultra Violet - All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UVP Ultra Violet - Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Upright Freezer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Upright Refigerator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vegetable Slicing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Lift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vending Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ventilation%2FExtraction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Venturi %28Arrestment Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vertical Spindle Moulder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Walk in Freezer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Walk in Refrigerator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waste Compacter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Water</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Water Meter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weighbridge %26 m%2Fc Over 5000kg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weighing Machines Over 30kg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weighing Machines Under 30kg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weights</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wheel Balancing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrapping %26 Packing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Y OTHER treatment methods not stated already YES</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>National_Listed_Building</fullName>
+        <active>true</active>
+        <description>FHDC requested addition</description>
+        <label>National Listed Building</label>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Delisted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demolished</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Listed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Category__c</picklist>
+            <values>
+                <fullName>Areas of trees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Groups of trees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual tree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parkland areas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Woodland areas</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Condition__c</picklist>
+            <values>
+                <fullName>Fair</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Poor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Criteria__c</picklist>
+            <values>
+                <fullName>Age</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Architectural Interest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communal Value</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Group Value</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Historic Interest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landmark Quality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landscape Quality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Potential</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rarity or Representativeness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Survival</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Group__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Latin_Name__c</picklist>
+            <values>
+                <fullName>Betula pendula</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Frangula alnus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fraxinus excelsior</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Listed_Building_Grade__c</picklist>
+            <values>
+                <fullName>Grade I</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grade II</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grade II*</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Occupancy__c</picklist>
+            <values>
+                <fullName>Occupied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unoccupied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Species__c</picklist>
+            <values>
+                <fullName>Alder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Alder Buckthorn</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aspen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Black Thorn</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coast Redwood</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Copper Beech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Crabapple</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Douglas Fir</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Downy Birch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Elder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Elm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>English Oak</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Maple</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grand Fir</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grey Willow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guelder Rose</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hawthorn</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hazel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Holly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Holm Oak</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hornbeam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Horse Chestnut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Larch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Norway Spruce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oak %28English%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oak %28Holm%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oak %28Sessile%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oak %28Turkey%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pussy Willow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rhododendron</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rowan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scots Pine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sessile Oak</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silver Birch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sitka Spruce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spindle Tree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sugar Maple</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sweet Chestnut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sycamore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Turkey Oak</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wayfaring Tree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Western Hemlock</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White Poplar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wild Service Tree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wych Elm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yew</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Type__c</picklist>
+            <values>
+                <fullName>Areas of trees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Groups of trees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual tree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parkland areas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Woodland areas</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusregserv__Class__c</picklist>
+            <values>
+                <fullName>Class I</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Class II</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Class III</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Class IIII</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Class IIIII</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusregserv__Type__c</picklist>
+            <values>
+                <fullName>120L Bin for Trade waste</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>240 Litre Bin for Trade Waste</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>360 Litre Bin for Trade Waste</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AEA Aeration All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AEP Aeration Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AFA Aluminium is used as a flocculent All of the Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AFP Aluminium is used as a flocculent Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Abrasive Wheels %28Garage%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Abrasive Wheels %28Metalworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Abrasive Wheels %28Shoe Repair%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amplification Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Area Measuring Instruments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aron- Ali Furnace</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Automatic Weighing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BLA Blending All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BLP Blending Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bacon Slicer%2FFood Slicer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Baffle %28Arrestment Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bag %28Arrestment Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Baine Maries</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Band Saw %28Woodworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bandsaw %28Metalworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Black Bags</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blast Chiller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blast Freezer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Boilers %28Launderette%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brat Pan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bulk Liquid Fuel Flowmeters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CDA Chlorine Dioxide</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CDP Chlorine Dioxide Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFA Chloramination All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFP Chloramination Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CLA Chlorination All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CLP Chlorination Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COA coagulation All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COP coagulation Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cages</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Capacity Measures</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Checkweighers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chest Freezer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Circular Saw</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Circular Saw %28Metal working%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinical Waste Bags</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Combination Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Combination Woodworker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compressor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compressors%2FBoiler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cont Band or Strip Saw</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conveyor Belts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cooler%2FCondensor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cooling Tower HSE Responsible</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cooling Tower LA Responsible</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cross Cut Saw</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Crucible</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cubic Measures</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cupola %28Cold%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cupola %28Hot%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cyclone %28Arrestment Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Diesel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dipstick Measuring Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disco</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Display Freezer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Doner Kebabs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dough Brakes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dough Mixers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Drilling Machines %28Metal%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Drills %28Woodworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dry Cleaners</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dryers %28Launderette%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dumb Waiter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ESP %28Arrestment Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electric Arc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electric Metal Melting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emergency Lighting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Empty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enclosure %28Attenuation Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escalator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Fire Escape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Extraction %28Woodworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FDA fluoride dosing All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FDP fluoride dosing Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fire Alarm BS 5446</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fire Alarm BS 5839</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fire Blanket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fire Extinguisher %28AFFF%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fire Extinguisher %28Dry Powder%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fire Extinguishers %28Water%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fire Hose</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flame Cutting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flashback Arrestors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fork Lift Truck Rider Operated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fork Lift Truck- Pedestrian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fridge Freezers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Front Loading Washing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fuel %26 Vapour Containment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Site Layout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Generator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goods Lift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grinding Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guillotine %28Metalworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guillotines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCA hypochlorite added All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP hypochlorite added Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hard Foam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hazard Type 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hazard Type 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hazard Type 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hazard Type 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High Speed Routers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home Lift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hydro Extraction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IEA ion exchange All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IEP ion exchange Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IFA Iron is used as a flocculent All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IFP Iron is used as a flocculent Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inflation Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Infra Red Dryers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intox Liquor Mls - Beer Meters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intox Liquor Mls - Spirits</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Isolation %28Attenuation Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jacuzzi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kerosene</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Key Cutting Machine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LPG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LPG Meter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lathe %28Metal working%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Liquid Fuel Flowmeters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live Music</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MFA Membrane filtration All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MFP Membrane filtration Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MNA Managanese filtrtation All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MNP Managanese filtrtation Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Measures of Length</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Measuring Container Bottles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meat Mincing Machines etc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Weighing Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Microwaves</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mig %26 Tig</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Milling Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mixing Machines %26 Attachments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mortsing Machine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multiple Rip Saw%2FStraight Edge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N OTHER treatment methods not stated already NO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NFA Nitrate filtration All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NFP Nitrate filtration Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nail Guns</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OXA Oxidation All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OXP Oxidation Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Office Chair - Gas Filled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Pickers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Arrestment Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other W %26 M Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overhead Cranes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oxy-Acetylene</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDA phosphate dosing All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDP phosphate dosing Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHA PH correction All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHP PH correction Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paladin for Trade Waste</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pallet Trucks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Passenger Lift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Person Weighing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Petroleum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Petroleum Mixtures</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Photocopiers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pie Warming Cabinets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pie%2FTart Making Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pneumatic Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pot %28Metal Melting%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Potato Chipping Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Power Operated Doors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Power Press %28Metalworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presses %28Launderette%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presses %28Shoe Repair%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RCCBs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recycling Bin A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refrigerated Display Cabinet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regulators</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rotary Knife Bowl Chopping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rotisseries</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEA Settlement All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEP Settlement Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SIA water originates from or is influenced by surface water All of Sup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SIP water originates from or is influenced by surface water Part of Su</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sanders %28Woodworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sauna</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scissor Lift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scrubber %28Arrestment Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shaping%2FPlaning Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shot Blasting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Showers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silencer %28Attenuation Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Slurry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Smoke Doors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spillage Containment%2FDrainage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stair Lift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stationary Cranes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steam Cabinet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steam Room</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stitching Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sunbeds</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Swimming Pools</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Taylor 4 Wheel Bin Trade Waste</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Teagle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Templets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Top Loading washing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trolleys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tyre Pressure Gauges</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tyre Pressure Guages</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tyre Removal Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UVA Ultra Violet - All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UVP Ultra Violet - Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Upright Freezer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Upright Refigerator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vegetable Slicing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Lift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vending Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ventilation%2FExtraction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Venturi %28Arrestment Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vertical Spindle Moulder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Walk in Freezer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Walk in Refrigerator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waste Compacter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Water</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Water Meter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weighbridge %26 m%2Fc Over 5000kg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weighing Machines Over 30kg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weighing Machines Under 30kg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weights</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wheel Balancing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrapping %26 Packing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Y OTHER treatment methods not stated already YES</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Scheduled_Monuments</fullName>
+        <active>true</active>
+        <description>FHDC requested addition</description>
+        <label>Scheduled Monuments</label>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Delisted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Demolished</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Listed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Category__c</picklist>
+            <values>
+                <fullName>Areas of trees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Groups of trees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual tree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parkland areas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Woodland areas</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Condition__c</picklist>
+            <values>
+                <fullName>Fair</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Poor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Criteria__c</picklist>
+            <values>
+                <fullName>Age</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Architectural Interest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communal Value</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Group Value</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Historic Interest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landmark Quality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landscape Quality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Potential</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rarity or Representativeness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Survival</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Group__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Latin_Name__c</picklist>
+            <values>
+                <fullName>Betula pendula</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Frangula alnus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fraxinus excelsior</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Listed_Building_Grade__c</picklist>
+            <values>
+                <fullName>Grade I</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grade II</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grade II*</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Occupancy__c</picklist>
+            <values>
+                <fullName>Occupied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unoccupied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Species__c</picklist>
+            <values>
+                <fullName>Alder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Alder Buckthorn</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aspen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Black Thorn</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coast Redwood</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Copper Beech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Crabapple</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Douglas Fir</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Downy Birch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Elder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Elm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>English Oak</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Field Maple</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grand Fir</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grey Willow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guelder Rose</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hawthorn</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hazel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Holly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Holm Oak</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hornbeam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Horse Chestnut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Larch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Norway Spruce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oak %28English%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oak %28Holm%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oak %28Sessile%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oak %28Turkey%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pussy Willow</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rhododendron</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rowan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scots Pine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sessile Oak</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silver Birch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sitka Spruce</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spindle Tree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sugar Maple</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sweet Chestnut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sycamore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Turkey Oak</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wayfaring Tree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Western Hemlock</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White Poplar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wild Service Tree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wych Elm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yew</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusbuiltenv__Type__c</picklist>
+            <values>
+                <fullName>Areas of trees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Groups of trees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual tree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parkland areas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Woodland areas</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusregserv__Class__c</picklist>
+            <values>
+                <fullName>Class I</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Class II</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Class III</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Class IIII</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Class IIIII</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>arcusregserv__Type__c</picklist>
+            <values>
+                <fullName>120L Bin for Trade waste</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>240 Litre Bin for Trade Waste</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>360 Litre Bin for Trade Waste</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AEA Aeration All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AEP Aeration Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AFA Aluminium is used as a flocculent All of the Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AFP Aluminium is used as a flocculent Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Abrasive Wheels %28Garage%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Abrasive Wheels %28Metalworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Abrasive Wheels %28Shoe Repair%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amplification Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Area Measuring Instruments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aron- Ali Furnace</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Automatic Weighing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BLA Blending All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BLP Blending Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bacon Slicer%2FFood Slicer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Baffle %28Arrestment Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bag %28Arrestment Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Baine Maries</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Band Saw %28Woodworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bandsaw %28Metalworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Black Bags</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blast Chiller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blast Freezer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Boilers %28Launderette%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brat Pan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bulk Liquid Fuel Flowmeters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CDA Chlorine Dioxide</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CDP Chlorine Dioxide Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFA Chloramination All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CFP Chloramination Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CLA Chlorination All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CLP Chlorination Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COA coagulation All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COP coagulation Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cages</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Capacity Measures</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Checkweighers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chest Freezer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Circular Saw</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Circular Saw %28Metal working%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinical Waste Bags</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Combination Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Combination Woodworker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compressor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compressors%2FBoiler</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cont Band or Strip Saw</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conveyor Belts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cooler%2FCondensor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cooling Tower HSE Responsible</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cooling Tower LA Responsible</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cross Cut Saw</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Crucible</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cubic Measures</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cupola %28Cold%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cupola %28Hot%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cyclone %28Arrestment Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Diesel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dipstick Measuring Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Disco</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Display Freezer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Doner Kebabs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dough Brakes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dough Mixers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Drilling Machines %28Metal%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Drills %28Woodworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dry Cleaners</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dryers %28Launderette%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dumb Waiter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ESP %28Arrestment Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electric Arc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electric Metal Melting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emergency Lighting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Empty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enclosure %28Attenuation Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escalator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Fire Escape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Extraction %28Woodworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FDA fluoride dosing All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FDP fluoride dosing Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fire Alarm BS 5446</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fire Alarm BS 5839</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fire Blanket</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fire Extinguisher %28AFFF%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fire Extinguisher %28Dry Powder%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fire Extinguishers %28Water%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fire Hose</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flame Cutting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flashback Arrestors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fork Lift Truck Rider Operated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fork Lift Truck- Pedestrian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fridge Freezers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Front Loading Washing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fuel %26 Vapour Containment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Site Layout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Generator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Goods Lift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grinding Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guillotine %28Metalworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guillotines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCA hypochlorite added All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HCP hypochlorite added Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hard Foam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hazard Type 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hazard Type 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hazard Type 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hazard Type 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High Speed Routers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home Lift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hydro Extraction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IEA ion exchange All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IEP ion exchange Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IFA Iron is used as a flocculent All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IFP Iron is used as a flocculent Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inflation Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Infra Red Dryers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intox Liquor Mls - Beer Meters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intox Liquor Mls - Spirits</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Isolation %28Attenuation Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jacuzzi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kerosene</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Key Cutting Machine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LPG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LPG Meter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lathe %28Metal working%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Liquid Fuel Flowmeters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live Music</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MFA Membrane filtration All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MFP Membrane filtration Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MNA Managanese filtrtation All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MNP Managanese filtrtation Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Measures of Length</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Measuring Container Bottles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meat Mincing Machines etc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Weighing Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Microwaves</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mig %26 Tig</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Milling Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mixing Machines %26 Attachments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mortsing Machine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multiple Rip Saw%2FStraight Edge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N OTHER treatment methods not stated already NO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NFA Nitrate filtration All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NFP Nitrate filtration Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nail Guns</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OXA Oxidation All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OXP Oxidation Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Office Chair - Gas Filled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Pickers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Arrestment Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other W %26 M Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overhead Cranes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oxy-Acetylene</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDA phosphate dosing All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PDP phosphate dosing Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHA PH correction All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHP PH correction Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paladin for Trade Waste</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pallet Trucks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Passenger Lift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Person Weighing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Petroleum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Petroleum Mixtures</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Photocopiers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pie Warming Cabinets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pie%2FTart Making Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pneumatic Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pot %28Metal Melting%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Potato Chipping Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Power Operated Doors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Power Press %28Metalworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presses %28Launderette%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presses %28Shoe Repair%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RCCBs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recycling Bin A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refrigerated Display Cabinet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regulators</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rotary Knife Bowl Chopping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rotisseries</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEA Settlement All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEP Settlement Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SIA water originates from or is influenced by surface water All of Sup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SIP water originates from or is influenced by surface water Part of Su</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sanders %28Woodworking%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sauna</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scissor Lift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scrubber %28Arrestment Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shaping%2FPlaning Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shot Blasting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Showers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silencer %28Attenuation Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Slurry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Smoke Doors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spillage Containment%2FDrainage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stair Lift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stationary Cranes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steam Cabinet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steam Room</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stitching Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sunbeds</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Swimming Pools</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Taylor 4 Wheel Bin Trade Waste</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Teagle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Templets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Top Loading washing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trolleys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tyre Pressure Gauges</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tyre Pressure Guages</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tyre Removal Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UVA Ultra Violet - All of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UVP Ultra Violet - Part of Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Upright Freezer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Upright Refigerator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vegetable Slicing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Lift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vending Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ventilation%2FExtraction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Venturi %28Arrestment Plant%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vertical Spindle Moulder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Walk in Freezer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Walk in Refrigerator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waste Compacter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Water</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Water Meter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weighbridge %26 m%2Fc Over 5000kg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weighing Machines Over 30kg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weighing Machines Under 30kg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weights</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wheel Balancing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrapping %26 Packing Machines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Y OTHER treatment methods not stated already YES</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>

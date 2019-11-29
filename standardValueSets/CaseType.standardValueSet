@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Accumulation of Leaves</fullName>
+        <default>false</default>
+        <label>Accumulation of Leaves</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Advice</fullName>
+        <default>false</default>
+        <label>Advice</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Communication &amp; Engagement</fullName>
+        <default>false</default>
+        <label>Communication &amp; Engagement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Corporate Debt</fullName>
+        <default>false</default>
+        <label>Corporate Debt</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dead Animal</fullName>
+        <default>false</default>
+        <label>Dead Animal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Deletion</fullName>
+        <default>false</default>
+        <label>Deletion</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Disabled Bay</fullName>
+        <default>false</default>
+        <label>Disabled Bay</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Economic Development</fullName>
+        <default>false</default>
+        <label>Economic Development</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Electoral Services</fullName>
+        <default>false</default>
+        <label>Electoral Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Feature Request</fullName>
+        <default>false</default>
+        <label>Feature Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Finance</fullName>
+        <default>false</default>
+        <label>Finance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Freedom of Information</fullName>
+        <default>false</default>
+        <label>Freedom of Information</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Human Resources</fullName>
+        <default>false</default>
+        <label>Human Resources</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Insurance</fullName>
+        <default>false</default>
+        <label>Insurance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Leadership Support</fullName>
+        <default>false</default>
+        <label>Leadership Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Legal</fullName>
+        <default>false</default>
+        <label>Legal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Build</fullName>
+        <default>false</default>
+        <label>New Build</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New or Amendment to Letters</fullName>
+        <default>false</default>
+        <label>New or Amendment to Letters</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Payment Trace or Transfer</fullName>
+        <default>false</default>
+        <label>Payment Trace or Transfer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PCN Challenge</fullName>
+        <default>false</default>
+        <label>PCN Challenge</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Performance &amp; Improvement</fullName>
+        <default>false</default>
+        <label>Performance &amp; Improvement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Problem</fullName>
+        <default>false</default>
+        <label>Problem</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Procurement</fullName>
+        <default>false</default>
+        <label>Procurement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Question</fullName>
+        <default>false</default>
+        <label>Question</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Record Amendment</fullName>
+        <default>false</default>
+        <label>Record Amendment</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reports</fullName>
+        <default>false</default>
+        <label>Reports</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Strategy &amp; Policy</fullName>
+        <default>false</default>
+        <label>Strategy &amp; Policy</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Street Cleaning</fullName>
+        <default>false</default>
+        <label>Street Cleaning</label>
+    </standardValue>
+    <standardValue>
+        <fullName>System Change</fullName>
+        <default>false</default>
+        <label>System Change</label>
+    </standardValue>
+    <standardValue>
+        <fullName>System Error</fullName>
+        <default>false</default>
+        <label>System Error</label>
+    </standardValue>
+    <standardValue>
+        <fullName>System Failure</fullName>
+        <default>false</default>
+        <label>System Failure</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Training</fullName>
+        <default>false</default>
+        <label>Training</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unspecified</fullName>
+        <default>false</default>
+        <label>Unspecified</label>
+    </standardValue>
+    <standardValue>
+        <fullName>User Access / Passwords</fullName>
+        <default>false</default>
+        <label>User Access / Passwords</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Waste</fullName>
+        <default>false</default>
+        <label>Waste</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Committee Services</fullName>
+        <default>false</default>
+        <label>Committee Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Information Officer</fullName>
+        <default>false</default>
+        <label>Information Officer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Finance Payments</fullName>
+        <default>false</default>
+        <label>Finance Payments</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Finance Systems</fullName>
+        <default>false</default>
+        <label>Finance Systems</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Finance Budget Related</fullName>
+        <default>false</default>
+        <label>Finance Budget Related</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Organisational Development</fullName>
+        <default>false</default>
+        <label>Organisational Development</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Systems Support</fullName>
+        <default>false</default>
+        <label>Systems Support</label>
+    </standardValue>
+</StandardValueSet>

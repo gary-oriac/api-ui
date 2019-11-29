@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Contains the detail of the knowledge article --></help>
+        <label><!-- Article Body --></label>
+        <name>Article_Body__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date that the policy comes into place within the Council --></help>
+        <label><!-- Date of Policy Adoption --></label>
+        <name>Date_of_Policy_Adoption__c</name>
+    </fields>
+    <fields>
+        <help><!-- Files that are related or pertinent to this knowledge article. --></help>
+        <label><!-- Related Files --></label>
+        <name>Related_Files__c</name>
+    </fields>
+    <fields>
+        <help><!-- Which department within the council is responsible. --></help>
+        <label><!-- Responsible Service Area --></label>
+        <name>Responsible_Service_Area__c</name>
+        <picklistValues>
+            <masterLabel>Community Services</masterLabel>
+            <translation><!-- Community Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Services</masterLabel>
+            <translation><!-- Customer Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR</masterLabel>
+            <translation><!-- HR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing</masterLabel>
+            <translation><!-- Housing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICT</masterLabel>
+            <translation><!-- ICT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waste</masterLabel>
+            <translation><!-- Waste --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Knowledge</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Knowledge</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>Knowledge Layout</layout>
+        <sections>
+            <label><!-- Body --></label>
+            <section>Body</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Represents a frequently asked question with a response that can be provided to customers. --></description>
+        <label><!-- FAQ --></label>
+        <name>FAQ</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A short guide for a user to perform one or more defined actions. --></description>
+        <label><!-- How To Guide --></label>
+        <name>How_To_Guide</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Council Policies, defined by formal documentation. Includes date of adoption. --></description>
+        <label><!-- Policy --></label>
+        <name>Policy</name>
+    </recordTypes>
+</CustomObjectTranslation>

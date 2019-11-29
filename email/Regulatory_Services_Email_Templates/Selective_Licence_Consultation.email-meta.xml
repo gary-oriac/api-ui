@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Selective Licence Consultation</name>
+    <style>none</style>
+    <subject>Selective Licence: Consultation</subject>
+    <textOnly>Dear {!Contact.Name},
+
+We have received a new Selective Licence application, and your input is required for our consideration of the granting of this licence.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,42 @@
+<apex:page >
+
+    <style>
+        .crm-viewer-height {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .crm-iframe {
+            border: none;
+        }
+    </style>
+
+    <script>
+        window.addEventListener('message', () => {
+            if(event.data.type === 'load') {
+                const staleViewer = document.getElementById('viewer');
+                if(staleViewer) staleViewer.parentNode.removeChild(staleViewer);
+
+                const src = URL.createObjectURL(event.data.content.data);
+                let viewer;
+
+                if(navigator.appVersion.indexOf('Edge') != -1) {
+                    viewer = document.createElement('iframe');
+                } else {
+                    viewer = document.createElement('embed');
+                    viewer.type = event.data.content.type;
+                }
+                
+                viewer.id = 'viewer';
+                viewer.src = src;
+                viewer.classList.add(...event.data.classList.split(' '));
+
+                document.getElementById('hook').appendChild(viewer);
+
+                parent.postMessage({type: 'load-complete'}, '*');
+            }
+        });
+    </script>
+
+    <div id="hook"></div>
+</apex:page>

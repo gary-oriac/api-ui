@@ -1,0 +1,3 @@
+The Application {!arcusbuiltenv__Planning_Application__c.Name} has been received and registered.
+
+Received Date: {!arcusbuiltenv__Planning_Application__c.arcusbuiltenv__Received_Date__c}

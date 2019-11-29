@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Case Auto Responder FHDC</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Freedom of Information</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>information.officer@folkestone-hythe.gov.uk</replyToEmail>
+            <senderEmail>customer.services@folkestone-hythe.gov.uk</senderEmail>
+            <senderName>Customer Services</senderName>
+            <template>Autoresponder_Templates/Generic_Autoresponder</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Corporate Debt</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>corporate.debt@folkestone-hythe.gov.uk</replyToEmail>
+            <senderEmail>customer.services@folkestone-hythe.gov.uk</senderEmail>
+            <senderName>Customer Services</senderName>
+            <template>Autoresponder_Templates/Generic_Autoresponder</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Type</field>
+                <operation>equals</operation>
+                <value>Insurance</value>
+            </criteriaItems>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>insurance@folkestone-hythe.gov.uk</replyToEmail>
+            <senderEmail>customer.services@folkestone-hythe.gov.uk</senderEmail>
+            <senderName>Customer Services</senderName>
+            <template>Autoresponder_Templates/Generic_Autoresponder</template>
+        </ruleEntry>
+        <ruleEntry>
+            <notifyCcRecipients>false</notifyCcRecipients>
+            <replyToEmail>case.support@folkestone-hythe.gov.uk</replyToEmail>
+            <senderEmail>customer.services@folkestone-hythe.gov.uk</senderEmail>
+            <senderName>Case Support</senderName>
+            <template>Autoresponder_Templates/Generic_Autoresponder</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

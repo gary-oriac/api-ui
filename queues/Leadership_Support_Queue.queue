@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Leadership Support Queue</name>
+    <queueMembers>
+        <users>
+            <user>clair.mclaren@folkestone-hythe.gov.uk</user>
+            <user>sharon.hayles@folkestone-hythe.gov.uk</user>
+            <user>trudi.simpson@folkestone-hythe.gov.uk</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

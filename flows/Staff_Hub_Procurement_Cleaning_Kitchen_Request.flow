@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Set_Case_Fields</name>
+        <label>Set Case Fields</label>
+        <locationX>797</locationX>
+        <locationY>152</locationY>
+        <assignmentItems>
+            <assignToReference>NewCase.Description</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>caseDescription</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>NewCase.Subject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Cleaning or Kitchen Supplies</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>NewCase.Origin</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Web</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Save_Case</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Case_Fields2</name>
+        <label>Set Case Fields</label>
+        <locationX>882</locationX>
+        <locationY>323</locationY>
+        <assignmentItems>
+            <assignToReference>NewCase.Description</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>caseDescription2</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>NewCase.Subject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Cleaning or Kitchen Supplies</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>NewCase.Origin</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Web</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Save_Case</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <description>Alcohol Wipes</description>
+        <name>Cleaning_alcohol_wipes</name>
+        <choiceText>Alcohol wipes</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Alcohol wipes</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Dish Soap</description>
+        <name>Cleaning_dishsoap</name>
+        <choiceText>&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;Dish Soap&lt;/span&gt;</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Dish Soap</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Hand Towels</description>
+        <name>Cleaning_hand_towels</name>
+        <choiceText>Hand Towels</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Hand Towels</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Hand Soap</description>
+        <name>Cleaning_handsoap</name>
+        <choiceText>&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;Hand Soap&lt;/span&gt;</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Hand Soap</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Cleaning_sponges</name>
+        <choiceText>Sponges</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Sponges</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Toilet Rolls</description>
+        <name>Cleaning_toilet_rolls</name>
+        <choiceText>Toilet rolls</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Toilet rolls</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Cleaning</description>
+        <name>cleaningOption_Cleaning</name>
+        <choiceText>Cleaning</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Cleaning</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>cleaningOption_Kitchen</name>
+        <choiceText>Kitchen</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Kitchen</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Chocolate</description>
+        <name>kitchen_chocolate</name>
+        <choiceText>Chocolate</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Chocolate</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Coffee</description>
+        <name>Kitchen_coffee</name>
+        <choiceText>Coffee</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Coffee</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Sugar</description>
+        <name>Kitchen_sugar</name>
+        <choiceText>Sugar</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Sugar</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Tea</description>
+        <name>kitchen_tea</name>
+        <choiceText>Tea</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Tea</stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <description>Choose Cleaning or Kitchen Stock</description>
+        <name>Cleaning_or_Kitchen_Stock_Decision</name>
+        <label>Cleaning or Kitchen Stock Decision</label>
+        <locationX>340</locationX>
+        <locationY>263</locationY>
+        <defaultConnectorLabel>Default option</defaultConnectorLabel>
+        <rules>
+            <name>Cleaning_Option</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Cleaning_or_kitchen_stock</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Cleaning</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Which_Cleaning_Supplies</targetReference>
+            </connector>
+            <label>Cleaning Option</label>
+        </rules>
+        <rules>
+            <name>Kitchen_Option</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Cleaning_or_kitchen_stock</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Kitchen</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Which_kitchen_Supplies</targetReference>
+            </connector>
+            <label>Kitchen Option</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Staff Hub - Procurement - Kitchen Request {!$Flow.CurrentDateTime}</interviewLabel>
+    <isTemplate>true</isTemplate>
+    <label>Staff Hub - Procurement - Cleaning/Kitchen Request</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Save_Case</name>
+        <label>Save Case</label>
+        <locationX>964</locationX>
+        <locationY>154</locationY>
+        <connector>
+            <targetReference>FindNewCase</targetReference>
+        </connector>
+        <inputReference>NewCase</inputReference>
+    </recordCreates>
+    <recordLookups>
+        <name>FindNewCase</name>
+        <label>FindNewCase</label>
+        <locationX>1130</locationX>
+        <locationY>153</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Acknowledgement</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>NewCase.Id</elementReference>
+            </value>
+        </filters>
+        <object>Case</object>
+        <outputReference>NewCase</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>CaseNumber</queriedFields>
+        <queriedFields>arcuscrm__Target_Resolution_Date__c</queriedFields>
+    </recordLookups>
+    <screens>
+        <name>Acknowledgement</name>
+        <label>Acknowledgement</label>
+        <locationX>1268</locationX>
+        <locationY>153</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>AckText</name>
+            <fieldText>&lt;p&gt;Thank you for submitting this enquiry. It has been assigned a unique reference number of &lt;b&gt;{!NewCase.CaseNumber}.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;You can provide updates or track the progress on the staff hub.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>casefileupload</name>
+            <extensionName>forceContent:fileUpload</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Upload any files against your enquiry</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>recordId</name>
+                <value>
+                    <elementReference>NewCase.Id</elementReference>
+                </value>
+            </inputParameters>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Choose Cleaning or Kitchen</description>
+        <name>Cleaning_or_kitchen_stock_request</name>
+        <label>Cleaning or Kitchen Stock Request</label>
+        <locationX>207</locationX>
+        <locationY>261</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Cleaning_or_Kitchen_Stock_Decision</targetReference>
+        </connector>
+        <fields>
+            <name>EnquiryIntro</name>
+            <fieldText>&lt;p&gt;Please use this form to create a Kitchen Stock /Cleaning Request {!CurrCouncilService.Name}.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>SlaGuidance</name>
+            <fieldText>&lt;p&gt;We aim to handle enquiries of this type within {!CurrCouncilService.arcuscrm__Service_SLA_Working_Days__c} working days.&amp;nbsp;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Cleaning_or_kitchen_stock</name>
+            <choiceReferences>cleaningOption_Cleaning</choiceReferences>
+            <choiceReferences>cleaningOption_Kitchen</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Cleaning or kitchen stock</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Which_Cleaning_Supplies</name>
+        <label>Which Cleaning Supplies</label>
+        <locationX>567</locationX>
+        <locationY>110</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Set_Case_Fields</targetReference>
+        </connector>
+        <fields>
+            <name>Cleaning_options_picklist</name>
+            <choiceReferences>Cleaning_hand_towels</choiceReferences>
+            <choiceReferences>Cleaning_toilet_rolls</choiceReferences>
+            <choiceReferences>Cleaning_handsoap</choiceReferences>
+            <choiceReferences>Cleaning_dishsoap</choiceReferences>
+            <choiceReferences>Cleaning_sponges</choiceReferences>
+            <choiceReferences>Cleaning_alcohol_wipes</choiceReferences>
+            <dataType>String</dataType>
+            <defaultSelectedChoiceReference>Cleaning_hand_towels</defaultSelectedChoiceReference>
+            <fieldText>Which cleaning supplies do you require?</fieldText>
+            <fieldType>MultiSelectPicklist</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Which Kitchen Stock</description>
+        <name>Which_kitchen_Supplies</name>
+        <label>Which kitchen Supplies</label>
+        <locationX>571</locationX>
+        <locationY>323</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Set_Case_Fields2</targetReference>
+        </connector>
+        <fields>
+            <name>Kitchen_stock_picklist</name>
+            <choiceReferences>Kitchen_coffee</choiceReferences>
+            <choiceReferences>kitchen_tea</choiceReferences>
+            <choiceReferences>Kitchen_sugar</choiceReferences>
+            <choiceReferences>kitchen_chocolate</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Which Kitchen Stock do you require?</fieldText>
+            <fieldType>MultiSelectPicklist</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>Staff_Hub_Flow_Init</startElementReference>
+    <status>Active</status>
+    <subflows>
+        <name>Staff_Hub_Flow_Init</name>
+        <label>Staff Hub Flow Init</label>
+        <locationX>207</locationX>
+        <locationY>59</locationY>
+        <connector>
+            <targetReference>Cleaning_or_kitchen_stock_request</targetReference>
+        </connector>
+        <flowName>arcuscrm__CRM_STAFF_HUB_SUBFLOW_LOAD_RT_USER_CONTACT_BEFORE_CASE_FLOW</flowName>
+        <inputAssignments>
+            <name>caseRecordTypeDevName</name>
+            <value>
+                <elementReference>caseRecordTypeDevName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>contactId</name>
+            <value>
+                <elementReference>contactId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>councilServiceId</name>
+            <value>
+                <elementReference>councilServiceId</elementReference>
+            </value>
+        </inputAssignments>
+        <outputAssignments>
+            <assignToReference>CurrCouncilService</assignToReference>
+            <name>CouncilService</name>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>NewCase</assignToReference>
+            <name>NewCase</name>
+        </outputAssignments>
+    </subflows>
+    <textTemplates>
+        <name>caseDescription</name>
+        <text>We need these:
+{!Cleaning_options_picklist}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>caseDescription2</name>
+        <text>We need these kitchen supplies:
+
+{!Kitchen_stock_picklist}</text>
+    </textTemplates>
+    <textTemplates>
+        <description>List of Cleaning Supplies</description>
+        <name>cleaningSuppplies</name>
+        <text>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;[{&quot;label&quot;: &quot;Hand Towels&quot;, &quot;value&quot;:&quot;Hand Towels&quot;},{&quot;label&quot;: &quot;Toilet rolls&quot;, &quot;value&quot;:&quot;Toilet rolls&quot;}{&quot;label&quot;: &quot;handsoap &quot;, &quot;value&quot;:&quot;handsoap &quot;}{&quot;label&quot;: &quot;dishsoap &quot;, &quot;value&quot;:&quot;dishsoap &quot;}{&quot;label&quot;: &quot;Sponges &quot;, &quot;value&quot;:&quot;Sponges &quot;}{&quot;label&quot;: &quot;alcohol wipes&quot;, &quot;value&quot;:&quot;alcohol wipes&quot;}]&lt;/span&gt;&lt;/p&gt;&lt;p&gt;  &lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>List of KItchen Supplies</description>
+        <name>kitchenSupplies</name>
+        <text>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;[{&quot;label&quot;: &quot;Coffee &quot;, &quot;value&quot;:&quot;Coffee &quot;},{&quot;label&quot;: &quot;Tea &quot;, &quot;value&quot;:&quot;Tea &quot;}{&quot;label&quot;: &quot;Sugar &quot;, &quot;value&quot;:&quot;Sugar &quot;},{&quot;label&quot;: &quot;Chocolate&quot;, &quot;value&quot;:&quot;Chocolate&quot;}]&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>caseRecordTypeDevName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>CRM_Internal_Request</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>cleaningOption</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>passed into the flow</description>
+        <name>contactId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Passed into the flow</description>
+        <name>councilServiceId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The current council service</description>
+        <name>CurrCouncilService</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>arcshared__Council_Service__c</objectType>
+    </variables>
+    <variables>
+        <description>Represents the new case</description>
+        <name>NewCase</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+</Flow>

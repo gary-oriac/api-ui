@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <decisions>
+        <name>Check_if_query_has_failed</name>
+        <label>Check if query has failed</label>
+        <locationX>470</locationX>
+        <locationY>51</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_Council_Serv_is_Null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CouncilService.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Error</targetReference>
+            </connector>
+            <label>If Council Serv is Null</label>
+        </rules>
+    </decisions>
+    <description>Provided a council service Id will lookup the council service record.</description>
+    <interviewLabel>CRM SUBFLOW Lookup Council Service {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>CRM SUBFLOW Lookup Council Service</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <description>Lookup the current council service record.</description>
+        <name>LookupCouncilService</name>
+        <label>LookupCouncilService</label>
+        <locationX>283</locationX>
+        <locationY>49</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_if_query_has_failed</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CouncilServiceId</elementReference>
+            </value>
+        </filters>
+        <object>arcshared__Council_Service__c</object>
+        <outputReference>CouncilService</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <queriedFields>arcshared__Description__c</queriedFields>
+        <queriedFields>arcshared__Ranking__c</queriedFields>
+        <queriedFields>arcshared__Council_Service_Area__c</queriedFields>
+        <queriedFields>arcshared__Status__c</queriedFields>
+        <queriedFields>arcuscrm__Customer_Form_Introduction__c</queriedFields>
+        <queriedFields>arcuscrm__Service_SLA_Working_Days__c</queriedFields>
+        <queriedFields>arcuscrm__Object_to_Create__c</queriedFields>
+    </recordLookups>
+    <screens>
+        <name>Error</name>
+        <label>Error</label>
+        <locationX>705</locationX>
+        <locationY>255</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>ErrorMessage</name>
+            <fieldText>&lt;p&gt;We are sorry but the system has encountered an error.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;The error message is: Council Service record could not be found for the supplied id ({!CouncilServiceId}).&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Please raise this with a member of the customer services team.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>LookupCouncilService</startElementReference>
+    <status>Draft</status>
+    <variables>
+        <description>The council service record</description>
+        <name>CouncilService</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <objectType>arcshared__Council_Service__c</objectType>
+    </variables>
+    <variables>
+        <description>The id of the council service record, should be passed in.</description>
+        <name>CouncilServiceId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

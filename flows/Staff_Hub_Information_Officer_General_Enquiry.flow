@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Set_Case_Fields</name>
+        <label>Set Case Fields</label>
+        <locationX>402</locationX>
+        <locationY>546</locationY>
+        <assignmentItems>
+            <assignToReference>NewCase.Description</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>caseDescription</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>NewCase.Subject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Subject_of_your_enquiry</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>NewCase.Origin</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Web</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>NewCase.Priority</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>High</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Save_Case</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Case_Fields_2</name>
+        <label>Set Case Fields 2</label>
+        <locationX>515</locationX>
+        <locationY>224</locationY>
+        <assignmentItems>
+            <assignToReference>NewCase.Description</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>caseDescription</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>NewCase.Subject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Subject_of_your_enquiry</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>NewCase.Origin</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Web</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Save_Case</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>choice_Dataprotection</name>
+        <choiceText>Data Protection (other)</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Data Protection (other)</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>choiceDatabreaches</name>
+        <choiceText>Data Breaches</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Data Breaches </stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>choiceDatarightsother</name>
+        <choiceText>Data rights (other)</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Data rights (other)</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>choiceDatarightsSAR</name>
+        <choiceText>Data rights (Subject Access Request)</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Data rights (Subject Access Request)</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>choiceGeneralenquiry</name>
+        <choiceText>General Enquiries</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>General Enquiries</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>choiceInformationrequest</name>
+        <choiceText>Information Request (FOI/EIR)</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Information requests (FOI / EIR)</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>choiceReuseofPSI</name>
+        <choiceText>Reuse of Public Sector Information</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Reuse of Public Sector Information </stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <name>Priority_Based_on_SLA</name>
+        <label>Priority Based on SLA</label>
+        <locationX>395</locationX>
+        <locationY>409</locationY>
+        <defaultConnector>
+            <targetReference>Set_Case_Fields_2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>High_priority_decision</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>CurrCouncilService.arcuscrm__Service_SLA_Working_Days__c</leftValueReference>
+                <operator>LessThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>3.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Case_Fields</targetReference>
+            </connector>
+            <label>High_priority_decision</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Staff Hub - Information Officer - General Enquiry {!$Flow.CurrentDateTime}</interviewLabel>
+    <isTemplate>true</isTemplate>
+    <label>Staff Hub - Information Officer - General Enquiry</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Save_Case</name>
+        <label>Save Case</label>
+        <locationX>796</locationX>
+        <locationY>232</locationY>
+        <connector>
+            <targetReference>FindNewCase</targetReference>
+        </connector>
+        <inputReference>NewCase</inputReference>
+    </recordCreates>
+    <recordLookups>
+        <name>FindNewCase</name>
+        <label>FindNewCase</label>
+        <locationX>953</locationX>
+        <locationY>233</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Acknowledgement</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>NewCase.Id</elementReference>
+            </value>
+        </filters>
+        <object>Case</object>
+        <outputReference>NewCase</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>CaseNumber</queriedFields>
+        <queriedFields>arcuscrm__Target_Resolution_Date__c</queriedFields>
+    </recordLookups>
+    <screens>
+        <name>Acknowledgement</name>
+        <label>Acknowledgement</label>
+        <locationX>1138</locationX>
+        <locationY>233</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>AckText</name>
+            <fieldText>&lt;p&gt;Thank you for submitting this enquiry. It has been assigned a unique reference number of &lt;b&gt;{!NewCase.CaseNumber}.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;You can provide updates or track the progress on the staff hub.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>casefileupload</name>
+            <extensionName>forceContent:fileUpload</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Upload any files against your enquiry</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>recordId</name>
+                <value>
+                    <elementReference>NewCase.Id</elementReference>
+                </value>
+            </inputParameters>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>General_Enquiry_Details</name>
+        <label>General Enquiry Details</label>
+        <locationX>405</locationX>
+        <locationY>228</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Priority_Based_on_SLA</targetReference>
+        </connector>
+        <fields>
+            <name>EnquiryIntro</name>
+            <fieldText>&lt;p&gt;Please use this form to record a general enquiry relating to, {!CurrCouncilService.Name}.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>SlaGuidance</name>
+            <fieldText>&lt;p&gt;We aim to handle enquiries of this type within {!CurrCouncilService.arcuscrm__Service_SLA_Working_Days__c} working days.&amp;nbsp;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Type_of_request</name>
+            <choiceReferences>choiceInformationrequest</choiceReferences>
+            <choiceReferences>choiceDatarightsSAR</choiceReferences>
+            <choiceReferences>choiceDatarightsother</choiceReferences>
+            <choiceReferences>choiceDatabreaches</choiceReferences>
+            <choiceReferences>choice_Dataprotection</choiceReferences>
+            <choiceReferences>choiceReuseofPSI</choiceReferences>
+            <choiceReferences>choiceGeneralenquiry</choiceReferences>
+            <dataType>String</dataType>
+            <defaultSelectedChoiceReference>choiceGeneralenquiry</defaultSelectedChoiceReference>
+            <fieldText>Type of request</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Subject_of_your_enquiry</name>
+            <dataType>String</dataType>
+            <fieldText>Subject of your enquiry</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Your_Enquiry</name>
+            <fieldText>Details of Enquiry</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>Staff_Hub_Flow_Init</startElementReference>
+    <status>Active</status>
+    <subflows>
+        <name>Staff_Hub_Flow_Init</name>
+        <label>Staff Hub Flow Init</label>
+        <locationX>225</locationX>
+        <locationY>231</locationY>
+        <connector>
+            <targetReference>General_Enquiry_Details</targetReference>
+        </connector>
+        <flowName>arcuscrm__CRM_STAFF_HUB_SUBFLOW_LOAD_RT_USER_CONTACT_BEFORE_CASE_FLOW</flowName>
+        <inputAssignments>
+            <name>caseRecordTypeDevName</name>
+            <value>
+                <elementReference>caseRecordTypeDevName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>contactId</name>
+            <value>
+                <elementReference>contactId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>councilServiceId</name>
+            <value>
+                <elementReference>councilServiceId</elementReference>
+            </value>
+        </inputAssignments>
+        <outputAssignments>
+            <assignToReference>CurrCouncilService</assignToReference>
+            <name>CouncilService</name>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>NewCase</assignToReference>
+            <name>NewCase</name>
+        </outputAssignments>
+    </subflows>
+    <textTemplates>
+        <name>caseDescription</name>
+        <text>Type of request:
+{!Type_of_request}
+--------------------------------------
+Details of enquiry:
+{!Your_Enquiry}</text>
+    </textTemplates>
+    <variables>
+        <name>caseRecordTypeDevName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>CRM_Internal_Request</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>passed into the flow</description>
+        <name>contactId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Passed into the flow</description>
+        <name>councilServiceId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The current council service</description>
+        <name>CurrCouncilService</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>arcshared__Council_Service__c</objectType>
+    </variables>
+    <variables>
+        <description>Represents the new case</description>
+        <name>NewCase</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+</Flow>

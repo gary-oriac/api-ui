@@ -1,0 +1,9 @@
+Dear {!Contact.Name},<br>
+<br>
+Your {!arcusregserv__RS_Licence__c.RecordType} {!arcusregserv__RS_Licence__c.Name} will expire on {!arcusregserv__RS_Licence__c.arcusregserv__End_Date_Granted__c}
+Please apply for a renewal if you don't want the licence to lapse.
+<br>
+<br>
+Best regards,<br>
+{!User.Name}<br>
+{!User.Title}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>detailing the date and time of the Property visit and the name of the officer attending</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Scheduling Property Visit</name>
+    <style>none</style>
+    <subject>{!arcusregserv__RS_Licence__c.RecordType} application ref: {!arcusregserv__RS_Activity__c.arcusregserv__Related_to_Case__c} for {!arcusregserv__RS_Activity__c.arcusregserv__Location__r.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

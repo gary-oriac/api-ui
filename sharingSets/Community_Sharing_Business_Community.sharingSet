@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>Case</object>
+        <objectField>Contact</objectField>
+        <userField>Contact</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>Contact</object>
+        <objectField>Id</objectField>
+        <userField>Contact</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>arcshared__Service_Account_Notification__c</object>
+        <objectField>arcshared__Contact__c</objectField>
+        <userField>Contact</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>arcshared__Service_Account__c</object>
+        <objectField>arcshared__Contact__c</objectField>
+        <userField>Contact</userField>
+    </accessMappings>
+    <name>Community Sharing - Business Community</name>
+    <profiles>Custom%3A Customer Community User - Business</profiles>
+</SharingSet>

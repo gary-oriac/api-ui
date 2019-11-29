@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Return_Queue_Id</name>
+        <label>Return Queue Id</label>
+        <locationX>546</locationX>
+        <locationY>64</locationY>
+        <assignmentItems>
+            <assignToReference>queueId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Queue_Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Returns the Id of the Queue to be used when assigning Que to Owner Id</description>
+    <interviewLabel>FHDC - Get Queue Id {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>FHDC - Get Queue Id</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Gets the Id associated with the passed queue name</description>
+        <name>Queue_Record</name>
+        <label>Queue Record</label>
+        <locationX>266</locationX>
+        <locationY>64</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Return_Queue_Id</targetReference>
+        </connector>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>queueName</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <object>Group</object>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <startElementReference>Queue_Record</startElementReference>
+    <status>Draft</status>
+    <variables>
+        <name>queueId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>Name of Queue</description>
+        <name>queueName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

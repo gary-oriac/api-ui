@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>SABtnLabel</name>
+                <value>Search again</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>SRHeading</name>
+                <value>Search results</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>articleFormatBtnLabel</name>
+                <value>Article format</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>format</name>
+                <value>table</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>noRecordMessage</name>
+                <value>Sorry, there are no records that contain your search criteria. Please try again with different criteria.</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>searchables</name>
+                <value>regserv_searchables,be_searchables,dev_searchables</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>tableFormatBtnLabel</name>
+                <value>Table format</value>
+            </componentInstanceProperties>
+            <componentName>PR_Search</componentName>
+        </componentInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <name>mainColumn</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>description</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>metaTags</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>PR Search Results</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:seoAssistant</componentName>
+        </componentInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>PR Search Results</masterLabel>
+    <template>
+        <name>DSHLC_Layout_1ColFullWidth</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

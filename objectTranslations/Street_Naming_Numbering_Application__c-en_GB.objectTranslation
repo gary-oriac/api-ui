@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- The reference number of the building control application for the development --></help>
+        <label><!-- Building Control Application Number --></label>
+        <name>Building_Control_Application_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description of the work to be carried out --></help>
+        <label><!-- Description of Work --></label>
+        <name>Description_of_Work__c</name>
+    </fields>
+    <fields>
+        <help><!-- If there are flats at the development then a flat plan layout must have been provided. --></help>
+        <label><!-- Flats at Development? --></label>
+        <name>Development_Flats__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Whether the development involved the naming of new streets. --></help>
+        <label><!-- Development Involves New Streets? --></label>
+        <name>Development_New_Streets__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The suggested unique streets names and reasoning behind them and who (related party). --></help>
+        <label><!-- Street Name Suggestions --></label>
+        <name>Development_Street_Names__c</name>
+    </fields>
+    <fields>
+        <help><!-- The name of the development as used on marketing materials. --></help>
+        <label><!-- Marketing Name --></label>
+        <name>Marketing_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The outstanding balance for financial transactions on this record, this is generated automatically. --></help>
+        <label><!-- Outstanding Balance --></label>
+        <name>Outstanding_Balance__c</name>
+    </fields>
+    <fields>
+        <help><!-- The reference number of the planning application for the development. --></help>
+        <label><!-- Planning Application Number --></label>
+        <name>Planning_Application_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- When the property was purchased. --></help>
+        <label><!-- Property Purchase Completion Date --></label>
+        <name>Property_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does the applicant own the property? --></help>
+        <label><!-- Property Owned? --></label>
+        <name>Property_Owned__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If the property is rented then a landlord&apos;s proof of agreement must be supplied. --></help>
+        <label><!-- Property Rented? --></label>
+        <name>Property_Rented__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The proposed first choice for the property name. --></help>
+        <label><!-- Proposed Name 1st Choice --></label>
+        <name>Proposed_Name_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- The alternative choice for the property name. --></help>
+        <label><!-- Proposed Name 2nd Choice --></label>
+        <name>Proposed_Name_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Picklist with developer names Record Type used to filter picklist Type. Do not use it in layouts. --></help>
+        <label><!-- Record Type Dev Name --></label>
+        <name>Record_Type_Dev_Name__c</name>
+        <picklistValues>
+            <masterLabel>Amendment_to_Name</masterLabel>
+            <translation><!-- Amendment_to_Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New_Addresses</masterLabel>
+            <translation><!-- New_Addresses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Free text Site Address to be used in correspondence	. --></help>
+        <label><!-- Site Address --></label>
+        <name>Site_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- Store the history of statuses. --></help>
+        <label><!-- Status History --></label>
+        <name>Status_History__c</name>
+    </fields>
+    <fields>
+        <help><!-- The status of the SN&amp;N application. --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Application Approved</masterLabel>
+            <translation><!-- Application Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Application Refused</masterLabel>
+            <translation><!-- Application Refused --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting</masterLabel>
+            <translation><!-- Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invalid</masterLabel>
+            <translation><!-- Invalid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Application</masterLabel>
+            <translation><!-- New Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valid</masterLabel>
+            <translation><!-- Valid --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The type of Street Naming &amp; Numbering Application. --></help>
+        <label><!-- Application Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Amendment to Name</masterLabel>
+            <translation><!-- Amendment to Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Addresses</masterLabel>
+            <translation><!-- New Addresses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The Water Authority that supplies the property. --></help>
+        <label><!-- Water Authority --></label>
+        <name>Water_Authority__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Street Naming &amp; Numbering Application</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Street Naming &amp; Numbering Applications</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <layouts>
+        <layout>BE Street Naming &amp; Numbering Application</layout>
+        <sections>
+            <label><!-- Amendment To Name --></label>
+            <section>Amendment To Name</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label><!-- New Addresses --></label>
+            <section>New Addresses</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Clone Record --></label>
+        <name>Clone_Record</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Link Related Record --></label>
+        <name>Link_Related_Record</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Amendments to name or addition of alias name. --></description>
+        <label><!-- Amendment to Name --></label>
+        <name>Amendment_to_Name</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- New postal addresses for new dwellings or commercial premises. --></description>
+        <label><!-- New Addresses --></label>
+        <name>New_Addresses</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Other types of Street Naming &amp; Numbering Application. --></description>
+        <label><!-- Other --></label>
+        <name>Other</name>
+    </recordTypes>
+</CustomObjectTranslation>

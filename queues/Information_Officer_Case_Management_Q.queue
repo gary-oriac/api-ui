@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Information Officer Case Management Q</name>
+    <queueMembers>
+        <users>
+            <user>eric.thomas@folkestone-hythe.gov.uk</user>
+            <user>jack.pearce@folkestone-hythe.gov.uk</user>
+            <user>jamie.harding@folkestone-hythe.gov.uk</user>
+            <user>jamie.naylor@folkestone-hythe.gov.uk</user>
+            <user>leigh.hall@folkestone-hythe.gov.uk</user>
+            <user>rachel.hedges@folkestone-hythe.gov.uk</user>
+            <user>rachel.neville@folkestone-hythe.gov.uk</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

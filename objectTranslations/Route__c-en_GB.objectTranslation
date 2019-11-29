@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Override the next calculated collection date if necessary. --></help>
+        <label><!-- Next Execution Date --></label>
+        <name>Next_Execution_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the previous collection date. --></help>
+        <label><!-- Previous Scheduled Date --></label>
+        <name>Previous_Scheduled_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter a description of the Route. --></help>
+        <label><!-- Route Description --></label>
+        <name>Route_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please indicate which day of the week the schedule should default to. --></help>
+        <label><!-- Schedule Day --></label>
+        <name>Schedule_Day__c</name>
+        <picklistValues>
+            <masterLabel>Friday</masterLabel>
+            <translation><!-- Friday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monday</masterLabel>
+            <translation><!-- Monday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saturday</masterLabel>
+            <translation><!-- Saturday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sunday</masterLabel>
+            <translation><!-- Sunday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thursday</masterLabel>
+            <translation><!-- Thursday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday</masterLabel>
+            <translation><!-- Tuesday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wednesday</masterLabel>
+            <translation><!-- Wednesday --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please supply a URL linking to the route schedule (could be a web page or a PDF). --></help>
+        <label><!-- Schedule URL --></label>
+        <name>Schedule_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Override the next after next calculated collection date if necessary. --></help>
+        <label><!-- Second Execution Date --></label>
+        <name>Second_Execution_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter a description of the type of round this Route covers. --></help>
+        <label><!-- Type of Round --></label>
+        <name>Type_of_Round__c</name>
+        <picklistValues>
+            <masterLabel>Food</masterLabel>
+            <translation><!-- Food --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Garden</masterLabel>
+            <translation><!-- Garden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Landfill</masterLabel>
+            <translation><!-- Landfill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recycling</masterLabel>
+            <translation><!-- Recycling --></translation>
+        </picklistValues>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Route</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Routes</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Corporate Projects Officer Otterpool</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Corporate Projects Officer Otterpool</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Senior_Specialist_Masterplanning_Project_Manager</parentRole>
+</Role>

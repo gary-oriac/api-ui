@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Represents a Profile that is solely reserved for members of staff, and so indicates that a user holding this profile should be a Staff Hub user.</description>
+    <label>Profile For Staff Hub</label>
+    <pluralLabel>Profiles For Staff Hub</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

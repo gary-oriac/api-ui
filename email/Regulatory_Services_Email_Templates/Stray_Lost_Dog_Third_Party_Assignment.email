@@ -1,0 +1,8 @@
+Dear {!Account.Name},
+
+Please note that a Stray/Lost Dog, {!arcusregserv__RS_Activity__c.Name} has been assigned to you.
+
+Kind Regards,
+
+{!User.Name}
+{!User.Title}

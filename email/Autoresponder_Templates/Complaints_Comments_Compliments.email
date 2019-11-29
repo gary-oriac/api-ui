@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+        color:#808080
+}
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #808080;
+   color: white;
+   text-align: center;
+}
+table {
+  font-family: verdana, sans-serif, size: 11;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+</style>
+<img src="https://www.folkestone-hythe.gov.uk/media/4895/FH-logo/image/FH_Logo_4c_231x157.png" alt="Folkestone and Hythe Logo" width="200" height="150">
+</head>
+<body>
+<body style="background-color:white;">
+
+<p style="font-size:100%;""font-family:verdana;">Thank you for completing our complaints, compliments and feedback form. We aim to acknowledge all forms within 5 working.</p>
+
+
+<br>
+<br>
+
+
+<div class="footer">
+  <p>The contents and any attachments of this e-mail message are confidential and intended only for the named addressees. If you have received it in error, please advise the sender immediately by return email and then delete it from your system. Any unauthorised distribution or copying of this transmission, or misuse or wrongful disclosure of information contained in it, is strictly prohibited. Folkestone &amp; Hythe District Council cannot accept liability for any statements made which are clearly the sender's own and not expressly made on behalf of the council. All email to and from the council may be monitored in accordance with the council's policies.
+
+Folkestone &amp; Hythe District Council is registered with the ICO as a data controller. Our privacy notice at <a href="www.folkestone-hythe.gov.uk/privacy">www.folkestone-hythe.gov.uk/privacy</a> explains how we use and share personal information and protect your privacy and rights</p>
+</div>
+
+</body>
+</html>

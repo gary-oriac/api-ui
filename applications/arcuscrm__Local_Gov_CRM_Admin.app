@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>CRM_Contact_Record_Page3</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Contact</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#32ACD9</headerColor>
+        <logo>arcuscrm__Arcus_CRM</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Tools to support administration and maintenance of the CRM</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Local Gov CRM Admin</label>
+    <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>arcuscrm__CRM_Council_Service_Area_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>arcshared__Council_Service_Area__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>arcuscrm__CRM_Council_Service_Area_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>arcshared__Council_Service_Area__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Standard</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>arcuscrm__CRM_Council_Service_Area_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>arcshared__Council_Service_Area__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>StandardAul</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>arcuscrm__CRM_Council_Service_Area_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>arcshared__Council_Service_Area__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>FHDC Officer (Backoffice)</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>arcuscrm__CRM_Council_Service_Area_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>arcshared__Council_Service_Area__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>FHDC Officer (CRM)</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ARC_IMP_Shadow_Case_Page_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.arcuscrm__CRM_Shadow_Case</recordType>
+        <type>Flexipage</type>
+        <profile>FHDC Officer (CRM)</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ARC_IMP_Shadow_Case_Page_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.arcuscrm__CRM_Shadow_Case</recordType>
+        <type>Flexipage</type>
+        <profile>FHDC Officer (Backoffice)</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>ARC_IMP_Shadow_Case_Page_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.arcuscrm__CRM_Shadow_Case</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <tabs>standard-home</tabs>
+    <tabs>arcuscrm__Getting_Started</tabs>
+    <tabs>arcuscrm__CRM_System_Admin_Info</tabs>
+    <tabs>arcshared__Council_Service_Area__c</tabs>
+    <tabs>arcshared__Council_Service__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>arcshared__Configuration__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>arcuscrm__Arcus_CRM_Admin_UtilityBar</utilityBar>
+</CustomApplication>

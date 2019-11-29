@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Assign_the_correct_consultation_id_to_the_web_comment</name>
+        <label>Assign the correct consultation id to the web comment</label>
+        <locationX>411</locationX>
+        <locationY>425</locationY>
+        <assignmentItems>
+            <assignToReference>webcomment.arcusbuiltenv__Consultation__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Idofcorrectconsultation</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>write_updated_web_comment_back_to_database</targetReference>
+        </connector>
+    </assignments>
+    <description>When fired by a process builder this will take at a web comment and then find consultations related the the planing app the comment is linked to and link the comment to the consultation with the longest deadline</description>
+    <interviewLabel>Planning web comment find longest consultation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Planning web comment find longest consultation</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>find_consultation_with_the_longest_deadline</name>
+        <label>find consultations related to the planning app the comment is about, sort them by deadline desc and keep the one with the longest deadline</label>
+        <locationX>354</locationX>
+        <locationY>271</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_the_correct_consultation_id_to_the_web_comment</targetReference>
+        </connector>
+        <filters>
+            <field>arcusbuiltenv__Planning_Application__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>webcomment.Planning_Application__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>arcusbuiltenv__Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Open Public</stringValue>
+            </value>
+        </filters>
+        <object>arcusbuiltenv__Consultation__c</object>
+        <outputAssignments>
+            <assignToReference>Idofcorrectconsultation</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+        <sortField>arcusbuiltenv__Consultation_Deadline__c</sortField>
+        <sortOrder>Desc</sortOrder>
+    </recordLookups>
+    <recordUpdates>
+        <name>write_updated_web_comment_back_to_database</name>
+        <label>write updated web comment back to database</label>
+        <locationX>473</locationX>
+        <locationY>559</locationY>
+        <inputReference>webcomment</inputReference>
+    </recordUpdates>
+    <startElementReference>find_consultation_with_the_longest_deadline</startElementReference>
+    <status>Active</status>
+    <variables>
+        <description>Stores the array of consultation records related to the planning app this web comment is against</description>
+        <name>Consultationsrelatedtothisplanningapp</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>arcusbuiltenv__Consultation__c</objectType>
+    </variables>
+    <variables>
+        <description>Id of the consultation to add to the comment</description>
+        <name>Idofcorrectconsultation</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>stores the web comment whose process builder fired this flow</description>
+        <name>webcomment</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>arcshared__Web_Comment__c</objectType>
+    </variables>
+</Flow>

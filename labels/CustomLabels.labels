@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?><CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Appeal_Group_Email</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Appeal Group Email</shortDescription>
+        <value>CONFIGUREME@arcusglobal.com</value>
+    </labels>
+    <labels>
+        <fullName>BERP_Contact_RT_ID</fullName>
+        <categories>BE5_Related_Party</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BERP Contact RT ID</shortDescription>
+        <value>0121r000000nIjdAAE</value>
+    </labels>
+    <labels>
+        <fullName>Comments_feed_view_button_label</fullName>
+        <categories>Public Register</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Comments feed view button label</shortDescription>
+        <value>Change to feed view</value>
+    </labels>
+    <labels>
+        <fullName>Comments_table_view_button_label</fullName>
+        <categories>Public Register</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Comments table view button label</shortDescription>
+        <value>Change to table view</value>
+    </labels>
+    <labels>
+        <fullName>Consultation_period_error</fullName>
+        <categories>Public Register</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Consultation period error</shortDescription>
+        <value>Failed to obtain consultation period.</value>
+    </labels>
+    <labels>
+        <fullName>Job_Title</fullName>
+        <language>en_GB</language>
+        <protected>false</protected>
+        <shortDescription>Job Title</shortDescription>
+        <value>Job Title</value>
+    </labels>
+    <labels>
+        <fullName>No_criteria_error</fullName>
+        <categories>Public Register (PR_AdvancedSearch)</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No criteria error</shortDescription>
+        <value>Please specify the criteria before searching.</value>
+    </labels>
+    <labels>
+        <fullName>Obtaining_comments_error</fullName>
+        <categories>Public Register</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Obtaining comments error</shortDescription>
+        <value>Failed to obtain comments.</value>
+    </labels>
+    <labels>
+        <fullName>Public_Register_base_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Public Register base URL</shortDescription>
+        <value>https://bedev-arcus-playforce-166a181f69a.cs100.force.com/FHDCPublicRegister/s</value>
+    </labels>
+    <labels>
+        <fullName>Search_parameter_error</fullName>
+        <categories>Public Register (PR_Search)</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Search parameter error</shortDescription>
+        <value>Invalid search parameters.</value>
+    </labels>
+    <labels>
+        <fullName>Unable_to_contact_server</fullName>
+        <categories>Public Register</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Unable to contact server</shortDescription>
+        <value>Unable to contact server.</value>
+    </labels>
+</CustomLabels>

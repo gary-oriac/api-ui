@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Food Hygiene Queue</name>
+    <queueSobject>
+        <sobjectType>arcusregserv__RS_Action__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>arcusregserv__RS_Activity__c</sobjectType>
+    </queueSobject>
+</Queue>

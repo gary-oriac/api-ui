@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Reference Number --></label>
+        <name>Account_Reference_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Reference --></label>
+        <name>Account_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies that the company sells clothing. --></help>
+        <label><!-- Clothing Retailer --></label>
+        <name>arcuscrm__Clothing_Retailer__c</name>
+    </fields>
+    <fields>
+        <label><!-- FHRS Number --></label>
+        <name>arcuscrm__FHRS_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies that the company sells food. --></help>
+        <label><!-- Food Trader --></label>
+        <name>arcuscrm__Food_Trader__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies that the company sells via Markets. --></help>
+        <label><!-- Market Trader --></label>
+        <name>arcuscrm__Market_Trader__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original My Account Contact --></label>
+        <name>arcuscrm__Original_My_Account_Contact__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Registered Charity Number --></label>
+        <name>arcuscrm__Registered_Charity_Number__c</name>
+    </fields>
+    <caseValues>
+        <plural>false</plural>
+        <value>Organisation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Organisations</value>
+    </caseValues>
+    <startsWith>Vowel</startsWith>
+    <fieldSets>
+        <label><!-- SearchColumns --></label>
+        <name>SearchColumns</name>
+    </fieldSets>
+    <layouts>
+        <layout>BE Account</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Business Account --></label>
+        <name>Business_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A business that interacts with the council. Could be a sole trader or a larger company. --></description>
+        <label><!-- Business --></label>
+        <name>arcuscrm__Business</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- While not strictly an “organisation” we have organisation records for each council ward. This allows cases of various types to be readily grouped by wards. --></description>
+        <label><!-- Ward --></label>
+        <name>arcuscrm__Ward</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- This account can&apos;t be modified/created. Please contact your administrator for more information. --></errorMessage>
+        <name>Ward_Account</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,11 @@
+<p>Dear {!arcusregserv__RS_Activity__c.arcusregserv__Contact__r.Salutation} {!arcusregserv__RS_Activity__c.arcusregserv__Contact__r.FirstName} {!arcusregserv__RS_Activity__c.arcusregserv__Contact__r.LastName}, </p>
+
+<p>Thank you for submitting your {!arcusregserv__RS_Activity__c.arcusregserv__Licence_Record_Type__c} application. </p>
+
+<p>Unfortunately one or more sections of your application have been completed incorrectly and require amendment. Please amend and resubmit your application via MyAccount at Peterborough.gov.uk. </p>
+
+<p>If you need to contact us about this application please quote ref : {!arcusregserv__RS_Activity__c.arcusregserv__Licence__r.Name}</p>
+
+Yours Sincerely,</br>
+Housing Enforcement Team</br>
+Peterborough City Council

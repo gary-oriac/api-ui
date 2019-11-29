@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>6baeabc6-f848-40eb-bbcc-9427cc45af90</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>e2877712-547e-4837-9ee8-b45a4180c060</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>2</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>2282df89-ef93-47e0-b544-01ae3fdf5a67</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>3</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
+        </componentInstances>
+        <name>facet-indirection-efbe0fb3-5937-4ce1-8af2-12f9197b33da</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;div class=&quot;slds-p-bottom_small&quot; /&gt;</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:htmlBlock</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>QSHeading</name>
+                <value>Search</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>categories</name>
+                <value>[     {         &quot;value&quot;: &quot;All&quot;,         &quot;label&quot;: &quot;All&quot;     },     {         &quot;value&quot;: &quot;PApplication&quot;,         &quot;label&quot;: &quot;Planning Applications&quot;     },     {         &quot;value&quot;: &quot;PlanningObligations&quot;,         &quot;label&quot;: &quot;Planning Obligation&quot;     },     {         &quot;value&quot;: &quot;AppealAll&quot;,         &quot;label&quot;: &quot;Appeal&quot;     },     {         &quot;value&quot;: &quot;EnforcementNotice&quot;,         &quot;label&quot;: &quot;Enforcement Notice&quot;     },     {         &quot;value&quot;: &quot;TPO&quot;,         &quot;label&quot;: &quot;Tree Preservation Order&quot;     },     {         &quot;value&quot;: &quot;BuildingControl&quot;,         &quot;label&quot;: &quot;Building Control Application&quot;     } ]</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>categoryLabel</name>
+                <value>Search by category</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>keywordLabel</name>
+                <value>Keyword Search</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>placeholder</name>
+                <value>Application No or Address</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>resultsPage</name>
+                <value>pr/s/pr-search-results</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>searchBtnLabel</name>
+                <value>Search</value>
+            </componentInstanceProperties>
+            <componentName>PR_SearchPanel</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;div class=&quot;slds-p-bottom_small&quot; /&gt;</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:htmlBlock</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>QLHeading</name>
+                <value>Quick Links</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>links</name>
+                <value>{                                 &quot;Applications&quot;: [{                                     &quot;value&quot;: &quot;PApplication7Days&quot;,                                     &quot;label&quot;: &quot;Applications decided in the last 7 days&quot;                                 }]     }</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>resultsPage</name>
+                <value>pr/s/pr-search-results</value>
+            </componentInstanceProperties>
+            <componentName>PR_QuickLinksPanel</componentName>
+        </componentInstances>
+        <name>6baeabc6-f848-40eb-bbcc-9427cc45af90</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;div class=&quot;slds-p-bottom_small&quot; /&gt;</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:htmlBlock</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>WLHeading</name>
+                <value>Weekly List</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>categories</name>
+                <value>weekly_lists,weekly_lists_building_control</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>categoryLabel</name>
+                <value>Application Category</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>commencingLabel</name>
+                <value>Week Commencing</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>resultsPage</name>
+                <value>pr/s/pr-search-results</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>searchBtnLabel</name>
+                <value>Search</value>
+            </componentInstanceProperties>
+            <componentName>PR_WeeklyListPanel</componentName>
+        </componentInstances>
+        <name>e2877712-547e-4837-9ee8-b45a4180c060</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;div class=&quot;slds-p-bottom_small&quot; /&gt;</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:htmlBlock</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>ASHeading</name>
+                <value>Advanced search</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>categories</name>
+                <value>be_adv_categories,be_adv_categories_Appeal,be_adv_categories_Building_Control,be_adv_categories_Enforcements,be_adv_categories_Obligations,be_adv_categories_TPO</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>categoryDefVal</name>
+                <value>-- Please select category --</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>categoryLabel</name>
+                <value>Category</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>legend</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>resultsPage</name>
+                <value>pr/s/pr-search-results</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>searchBtnLabel</name>
+                <value>Search Details</value>
+            </componentInstanceProperties>
+            <componentName>PR_AdvancedSearch</componentName>
+        </componentInstances>
+        <name>2282df89-ef93-47e0-b544-01ae3fdf5a67</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;div class=&quot;slds-clearfix&quot;&gt;
+    &lt;a href=&quot;/pr/s/&quot; class=&quot;slds-button slds-button_brand slds-float_right&quot;&gt;Public register home&lt;/a&gt;
+&lt;/div&gt;</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:htmlBlock</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;h1&gt;Public Register&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;The consultation period for public comment on licensing applications is 28 days. Please make your comments within that period using the &apos;Leave a Comment&apos; button on application page only. If the application consultation period has lapsed, you may be able to leave a comment by emailing us, but we cannot guarantee your comments will be taken in to account as the application may have already been decided.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:richTextInline</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>regions</name>
+                <value>facet-indirection-efbe0fb3-5937-4ce1-8af2-12f9197b33da</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>tabsetConfig</name>
+                <value>{&quot;UUID&quot;:&quot;efbe0fb3-5937-4ce1-8af2-12f9197b33da&quot;,&quot;activeTab&quot;:&quot;&quot;,&quot;useOverflowMenu&quot;:false,&quot;tabs&quot;:[{&quot;UUID&quot;:&quot;6baeabc6-f848-40eb-bbcc-9427cc45af90&quot;,&quot;tabName&quot;:&quot;Quick search&quot;,&quot;tabKey&quot;:&quot;1&quot;,&quot;locked&quot;:false,&quot;allowGuestUser&quot;:true,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;e2877712-547e-4837-9ee8-b45a4180c060&quot;,&quot;tabName&quot;:&quot;Weekly list&quot;,&quot;tabKey&quot;:&quot;2&quot;,&quot;locked&quot;:false,&quot;allowGuestUser&quot;:true,&quot;seedComponents&quot;:[]},{&quot;UUID&quot;:&quot;2282df89-ef93-47e0-b544-01ae3fdf5a67&quot;,&quot;tabName&quot;:&quot;Advanced search&quot;,&quot;tabKey&quot;:&quot;3&quot;,&quot;locked&quot;:false,&quot;allowGuestUser&quot;:true,&quot;seedComponents&quot;:[]}]}</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:tabset</componentName>
+        </componentInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <name>mainColumn</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>description</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>metaTags</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>BE Home</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:seoAssistant</componentName>
+        </componentInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>BE Home</masterLabel>
+    <template>
+        <name>DSHLC_Layout_1ColFullWidth</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

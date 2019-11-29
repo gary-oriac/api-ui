@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>navigationType</name>
+                <value>Left</value>
+            </componentInstanceProperties>
+            <componentName>DSHLC_Navigation</componentName>
+        </componentInstances>
+        <name>navColumn</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>titleText</name>
+                <value>My Details</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>titleType</name>
+                <value>Page title</value>
+            </componentInstanceProperties>
+            <componentName>DSHLC_Title</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;h3 class=&quot;slds-m-bottom_medium&quot;&gt;View and edit your personal details&lt;/h3&gt;</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:htmlBlock</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;p&gt;This page contains the most recent information we have about you.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Taking a moment to &lt;b&gt;check your details&lt;/b&gt; and adding any missing information will make any future applications or enquires with us quicker and easier.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt; &lt;/p&gt;</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:richTextInline</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>makeCase</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentName>DSHLC_Profile</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;div class=&quot;slds-m-top_xx-large&quot;&gt;&lt;/div&gt;
+&lt;hr&gt;</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:htmlBlock</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>titleText</name>
+                <value>Marketing preferences</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>titleType</name>
+                <value>Page title</value>
+            </componentInstanceProperties>
+            <componentName>DSHLC_Title</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>answeredFieldVisibility</name>
+                <value>show</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>contentCouncilOnlyVisibility</name>
+                <value>show</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>contentCouncilOwnedVisibility</name>
+                <value>show</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>contentNewsletterVisibility</name>
+                <value>show</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>methodSMSOptionVisibility</name>
+                <value>show</value>
+            </componentInstanceProperties>
+            <componentName>DSHLC_MarketingPreferences</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;div class=&quot;slds-m-top_xx-large&quot;&gt;&lt;/div&gt;
+&lt;hr&gt;</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:htmlBlock</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>titleText</name>
+                <value>Close my account</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>titleType</name>
+                <value>Page title</value>
+            </componentInstanceProperties>
+            <componentName>DSHLC_Title</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;If you are no longer interested in using your council online account and its online services, you can close it here.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:richTextInline</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>buttonAlign</name>
+                <value>Left</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>buttonLabel</name>
+                <value>I would like to close my account</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>buttonType</name>
+                <value>Primary</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>urlPath</name>
+                <value>deactivate</value>
+            </componentInstanceProperties>
+            <componentName>DSHLC_Button</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;div class=&quot;slds-p-top_xx-large&quot;&gt;&lt;hr&gt;&lt;/div&gt;</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:htmlBlock</componentName>
+        </componentInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>profile-details</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:seoAssistant</componentName>
+        </componentInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>Profile Details</masterLabel>
+    <template>
+        <name>DSHLC_Layout_2ColLeftNav</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

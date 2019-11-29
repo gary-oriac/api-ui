@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Internal Case Management Team Leader</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Case Management Support Services Team Leader</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Case_Management_Support_Services_Lead_Officer</parentRole>
+</Role>

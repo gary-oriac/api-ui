@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CaseSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAutoProcUser>false</caseAutoProcUser>
+    <caseFeedItemSettings>
+        <characterLimit>400</characterLimit>
+        <collapseThread>true</collapseThread>
+        <displayFormat>Default</displayFormat>
+        <feedItemType>EmailMessageEvent</feedItemType>
+    </caseFeedItemSettings>
+    <caseMergeInLightning>false</caseMergeInLightning>
+    <closeCaseThroughStatusChange>false</closeCaseThroughStatusChange>
+    <defaultCaseFeedLayoutOn>true</defaultCaseFeedLayoutOn>
+    <defaultCaseOwner>arcus.support@fhdc.salesforce</defaultCaseOwner>
+    <defaultCaseOwnerType>User</defaultCaseOwnerType>
+    <defaultCaseUser>arcus.support@fhdc.salesforce</defaultCaseUser>
+    <emailToCase>
+        <enableE2CSourceTracking>true</enableE2CSourceTracking>
+        <enableEmailToCase>true</enableEmailToCase>
+        <enableHtmlEmail>true</enableHtmlEmail>
+        <enableOnDemandEmailToCase>true</enableOnDemandEmailToCase>
+        <enableThreadIDInBody>true</enableThreadIDInBody>
+        <enableThreadIDInSubject>false</enableThreadIDInSubject>
+        <notifyOwnerOnNewCaseEmail>true</notifyOwnerOnNewCaseEmail>
+        <overEmailLimitAction>Bounce</overEmailLimitAction>
+        <preQuoteSignature>false</preQuoteSignature>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>Systems_Support</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>High</casePriority>
+            <createTask>false</createTask>
+            <emailAddress>case.support@folkestone-hythe.gov.uk</emailAddress>
+            <emailServicesAddress>case.support@2ts260h8eqtq8ofsavan08bull5f959u0ncqlyaadhuxrjiqqd.1t-qgslea2.eu25.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Case Support</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>Committee_Services_Case_Management_Queue</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>true</createTask>
+            <emailAddress>committee@folkestone-hythe.gov.uk</emailAddress>
+            <emailServicesAddress>committee@2-198ryefy4f7ksmgybwf7f3m7eq4ki2mynuidwzwnltnl7hg56i.1t-qgslea2.eu25.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Committee Services Case Management</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+            <taskStatus>Not Started</taskStatus>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>Corporate_Debt_Case_Management_Queue</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>true</createTask>
+            <emailAddress>corporate.debt@folkestone-hythe.gov.uk</emailAddress>
+            <emailServicesAddress>corporate.debt@h-2213axsv8unweqb08lsdjrtv4krrsf7iz6zulbnnspkgq911io.1t-qgslea2.eu25.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Corporate Debt Case Management</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+            <taskStatus>Not Started</taskStatus>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>Finance_Payments_Case_Management_Queue</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>true</createTask>
+            <emailAddress>invoices@folkestone-hythe.gov.uk</emailAddress>
+            <emailServicesAddress>invoices@k-1v8ovvcv8n19wsfldng711he71672cos2anaynd1s082qy4o6h.1t-qgslea2.eu25.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Finance Payment Case Management</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+            <taskStatus>Not Started</taskStatus>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>Information_Officer_Case_Management_Q</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>High</casePriority>
+            <createTask>true</createTask>
+            <emailAddress>information.officer@folkestone-hythe.gov.uk</emailAddress>
+            <emailServicesAddress>information.officer@v-xq0um2mm78mvgcgg67hmencdbpf1r9306rh0q7zdwr2c8kvkn.1t-qgslea2.eu25.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Information Officer Case Management</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+            <taskStatus>Not Started</taskStatus>
+        </routingAddresses>
+        <routingAddresses>
+            <addressType>EmailToCase</addressType>
+            <caseOrigin>Email</caseOrigin>
+            <caseOwner>Insurance_Case_Management_Queue</caseOwner>
+            <caseOwnerType>Queue</caseOwnerType>
+            <casePriority>Medium</casePriority>
+            <createTask>true</createTask>
+            <emailAddress>insurance@folkestone-hythe.gov.uk</emailAddress>
+            <emailServicesAddress>insurance@0-2dxma0llv854edetf0j5v2jo1nbeq301hf4kmu7m3x5537i9mb.1t-qgslea2.eu25.case.salesforce.com</emailServicesAddress>
+            <isVerified>true</isVerified>
+            <routingName>Insurance Case Management</routingName>
+            <saveEmailHeaders>false</saveEmailHeaders>
+            <taskStatus>Not Started</taskStatus>
+        </routingAddresses>
+        <unauthorizedSenderAction>Discard</unauthorizedSenderAction>
+    </emailToCase>
+    <enableCaseFeed>true</enableCaseFeed>
+    <enableDraftEmails>false</enableDraftEmails>
+    <enableEarlyEscalationRuleTriggers>false</enableEarlyEscalationRuleTriggers>
+    <enableEmailActionDefaultsHandler>false</enableEmailActionDefaultsHandler>
+    <enableSuggestedArticlesApplication>false</enableSuggestedArticlesApplication>
+    <enableSuggestedArticlesCustomerPortal>false</enableSuggestedArticlesCustomerPortal>
+    <enableSuggestedArticlesPartnerPortal>false</enableSuggestedArticlesPartnerPortal>
+    <enableSuggestedSolutions>true</enableSuggestedSolutions>
+    <escalateCaseBefore>false</escalateCaseBefore>
+    <keepRecordTypeOnAssignmentRule>true</keepRecordTypeOnAssignmentRule>
+    <notifyContactOnCaseComment>false</notifyContactOnCaseComment>
+    <notifyDefaultCaseOwner>false</notifyDefaultCaseOwner>
+    <notifyOwnerOnCaseComment>false</notifyOwnerOnCaseComment>
+    <notifyOwnerOnCaseOwnerChange>false</notifyOwnerOnCaseOwnerChange>
+    <showEmailAttachmentsInCaseAttachmentsRL>true</showEmailAttachmentsInCaseAttachmentsRL>
+    <systemUserEmail>automatedcase@00d1t000000qgslea2.ext</systemUserEmail>
+    <useSystemEmailAddress>true</useSystemEmailAddress>
+    <useSystemUserAsDefaultCaseUser>false</useSystemUserAsDefaultCaseUser>
+    <webToCase>
+        <enableWebToCase>false</enableWebToCase>
+    </webToCase>
+</CaseSettings>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Add_to_list_to_write</name>
+        <label>Add to list to write</label>
+        <locationX>604</locationX>
+        <locationY>674</locationY>
+        <assignmentItems>
+            <assignToReference>RelatedPartiestoWrite</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>SingleRelatedPartyToUpdate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_through_each_of_the_found_related_parties</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Id_to_new_parent</name>
+        <label>Update Id to new parent</label>
+        <locationX>782</locationX>
+        <locationY>521</locationY>
+        <assignmentItems>
+            <assignToReference>SingleRelatedPartyToUpdate.arcusbuiltenv__Enforcement__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>NewParent.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_to_list_to_write</targetReference>
+        </connector>
+    </assignments>
+    <description>Fired by a process builder this flow takes in the record Id of an enforcement that is being closed as a duplicate, finds all its related parties, filters them for complainants and creates new related parties for the complainants against the main enforcement complaint</description>
+    <interviewLabel>Copy related parties from dulicate enforcemnt to main {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Copy related parties from dulicate enforcemnt to main</label>
+    <loops>
+        <name>Loop_through_each_of_the_found_related_parties</name>
+        <label>Loop through each of the found related parties</label>
+        <locationX>499</locationX>
+        <locationY>411</locationY>
+        <assignNextValueToReference>SingleRelatedPartyToUpdate</assignNextValueToReference>
+        <collectionReference>RelatedPartiesneedingcopying</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Update_Id_to_new_parent</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Save_new_records</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Save_new_records</name>
+        <label>Save new records</label>
+        <locationX>290</locationX>
+        <locationY>676</locationY>
+        <inputReference>RelatedPartiestoWrite</inputReference>
+    </recordCreates>
+    <recordLookups>
+        <name>Find_all_related_parties_related_to_duplcaite_with_role_complainant</name>
+        <label>Find all related parties related to duplcaite with role complainant</label>
+        <locationX>368</locationX>
+        <locationY>184</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_through_each_of_the_found_related_parties</targetReference>
+        </connector>
+        <filters>
+            <field>arcusbuiltenv__Enforcement__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>DuplicateEnforcement.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>arcusbuiltenv__Role__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Complainant</stringValue>
+            </value>
+        </filters>
+        <object>arcusbuiltenv__Related_Party__c</object>
+        <outputReference>RelatedPartiesneedingcopying</outputReference>
+        <queriedFields>arcusbuiltenv__Contact__c</queriedFields>
+        <queriedFields>arcusbuiltenv__Account__c</queriedFields>
+        <queriedFields>arcusbuiltenv__Role__c</queriedFields>
+        <queriedFields>arcusbuiltenv__Start_Date__c</queriedFields>
+        <queriedFields>arcusbuiltenv__End_Date__c</queriedFields>
+        <queriedFields>arcusbuiltenv__Details__c</queriedFields>
+        <queriedFields>RecordTypeId</queriedFields>
+    </recordLookups>
+    <startElementReference>Find_all_related_parties_related_to_duplcaite_with_role_complainant</startElementReference>
+    <status>Active</status>
+    <variables>
+        <description>The enforcement record that is being closed as a duplicate and therefore triggered this flow</description>
+        <name>DuplicateEnforcement</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>arcusbuiltenv__Enforcement__c</objectType>
+    </variables>
+    <variables>
+        <description>Stores the new lead enforcement case which the new related party records should be associated with</description>
+        <name>NewParent</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>arcusbuiltenv__Enforcement__c</objectType>
+    </variables>
+    <variables>
+        <description>Stores a list of the related parties that need to be copied and linked to the main enforcement app</description>
+        <name>RelatedPartiesneedingcopying</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>arcusbuiltenv__Related_Party__c</objectType>
+    </variables>
+    <variables>
+        <description>Stores the updated data that needs saving</description>
+        <name>RelatedPartiestoWrite</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>arcusbuiltenv__Related_Party__c</objectType>
+    </variables>
+    <variables>
+        <description>Stores the detail of one related party from related parties needing updating so that it can be worked on</description>
+        <name>SingleRelatedPartyToUpdate</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>arcusbuiltenv__Related_Party__c</objectType>
+    </variables>
+</Flow>

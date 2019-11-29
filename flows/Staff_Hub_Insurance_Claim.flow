@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Set_Case_Fields</name>
+        <label>Set Case Fields</label>
+        <locationX>876</locationX>
+        <locationY>358</locationY>
+        <assignmentItems>
+            <assignToReference>NewCase.Description</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue> {!caseDescription}</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>NewCase.Subject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Insurance Claim Public </stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>NewCase.Origin</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Web</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Save_Case</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Case_Fields_2</name>
+        <label>Set Case Fields 2</label>
+        <locationX>569</locationX>
+        <locationY>523</locationY>
+        <assignmentItems>
+            <assignToReference>NewCase.Description</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>caseDecription2</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>NewCase.Subject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Insurance Claim Staff </stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>NewCase.Origin</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Web</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Save_Case</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>Choice_myself</name>
+        <choiceText>Myself</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Myself</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Choice_public</name>
+        <choiceText>Public</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Public</stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <name>Staff_or_public_decision</name>
+        <label>Staff or public decision</label>
+        <locationX>562</locationX>
+        <locationY>58</locationY>
+        <defaultConnector>
+            <targetReference>General_Enquiry_Details</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Public</defaultConnectorLabel>
+        <rules>
+            <name>Staff_member</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Are_you_reporting_for_yourself_of_a_member_of_the_public</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Myself</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Details_of_the_incident</targetReference>
+            </connector>
+            <label>Staff member</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Staff_or_public_decision_2</name>
+        <label>Staff or public decision 2</label>
+        <locationX>566</locationX>
+        <locationY>366</locationY>
+        <defaultConnector>
+            <targetReference>Set_Case_Fields</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Public</defaultConnectorLabel>
+        <rules>
+            <name>Staff_member_2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Are_you_reporting_for_yourself_of_a_member_of_the_public</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Myself</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Case_Fields_2</targetReference>
+            </connector>
+            <label>Staff member 2</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Staff Hub - Insurance - Claim {!$Flow.CurrentDateTime}</interviewLabel>
+    <isTemplate>true</isTemplate>
+    <label>Staff Hub - Insurance - Claim</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Save_Case</name>
+        <label>Save Case</label>
+        <locationX>874</locationX>
+        <locationY>569</locationY>
+        <connector>
+            <targetReference>FindNewCase</targetReference>
+        </connector>
+        <inputReference>NewCase</inputReference>
+    </recordCreates>
+    <recordLookups>
+        <name>FindNewCase</name>
+        <label>FindNewCase</label>
+        <locationX>1034</locationX>
+        <locationY>571</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Acknowledgement</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>NewCase.Id</elementReference>
+            </value>
+        </filters>
+        <object>Case</object>
+        <outputReference>NewCase</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>CaseNumber</queriedFields>
+        <queriedFields>arcuscrm__Target_Resolution_Date__c</queriedFields>
+    </recordLookups>
+    <screens>
+        <name>Acknowledgement</name>
+        <label>Acknowledgement</label>
+        <locationX>1246</locationX>
+        <locationY>574</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>AckText</name>
+            <fieldText>&lt;p&gt;Thank you for submitting this enquiry. It has been assigned a unique reference number of &lt;b&gt;{!NewCase.CaseNumber}.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;You can provide updates or track the progress on the staff hub.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>casefileupload</name>
+            <extensionName>forceContent:fileUpload</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Upload any files against your enquiry</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>recordId</name>
+                <value>
+                    <elementReference>NewCase.Id</elementReference>
+                </value>
+            </inputParameters>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Please include the exact location</description>
+        <name>Details_of_the_incident</name>
+        <label>Details of the incident</label>
+        <locationX>571</locationX>
+        <locationY>206</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Staff_or_public_decision_2</targetReference>
+        </connector>
+        <fields>
+            <name>Details_of_incident_display_text</name>
+            <fieldText>&lt;p&gt;Please include the exact location of the incident&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Incident_Details</name>
+            <fieldText>Incident Details</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Incident_date_time_display_text</name>
+            <fieldText>&lt;p&gt;Please enter the date and time of the incident.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Incident_Date_and_Time</name>
+            <dataType>DateTime</dataType>
+            <fieldText>Incident Date and Time</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <validationRule>
+                <errorMessage>&lt;p&gt;Please ensure the date is before today&apos;s date&lt;/p&gt;</errorMessage>
+                <formulaExpression>{!Incident_Date_and_Time} &lt; {!$Flow.CurrentDateTime}</formulaExpression>
+            </validationRule>
+        </fields>
+        <fields>
+            <name>Display_injury_display_text</name>
+            <fieldText>&lt;p&gt;Please include details of any injuries or damage to property&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Details_of_Injury</name>
+            <fieldText>Details of Injury</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Details_of_negligence_display_text</name>
+            <fieldText>&lt;p&gt;Please include details of how or why you feel the council have acted negligently.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Details_of_negligence</name>
+            <fieldText>Details of negligence</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>General_Enquiry_Details</name>
+        <label>General Enquiry Details</label>
+        <locationX>866</locationX>
+        <locationY>59</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Details_of_the_incident</targetReference>
+        </connector>
+        <fields>
+            <name>EnquiryIntro</name>
+            <fieldText>&lt;p&gt;Please use this form to log an Insurance claim for a member of the public{!CurrCouncilService.Name}.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>SlaGuidance</name>
+            <fieldText>&lt;p&gt;We aim to handle enquiries of this type within {!CurrCouncilService.arcuscrm__Service_SLA_Working_Days__c} working days.&amp;nbsp;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Customer_Name</name>
+            <dataType>String</dataType>
+            <fieldText>Customer Name</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Customer_Address</name>
+            <fieldText>Customer Address</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Customer_Date_of_Birth</name>
+            <dataType>Date</dataType>
+            <fieldText>Customer Date of Birth</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Customer_Phone_Number</name>
+            <dataType>String</dataType>
+            <fieldText>Customer Phone Number</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Customer_Email_Address</name>
+            <dataType>String</dataType>
+            <fieldText>Customer Email Address</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Source_question</name>
+        <label>Source_question</label>
+        <locationX>289</locationX>
+        <locationY>52</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Staff_or_public_decision</targetReference>
+        </connector>
+        <fields>
+            <name>SLA_guidance</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;We aim to handle enquiries of this type within {!CurrCouncilService.arcuscrm__Service_SLA_Working_Days__c} working days.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Are_you_reporting_for_yourself_of_a_member_of_the_public</name>
+            <choiceReferences>Choice_myself</choiceReferences>
+            <choiceReferences>Choice_public</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Are you reporting for yourself or a member of the public</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>Staff_Hub_Flow_Init</startElementReference>
+    <status>Active</status>
+    <subflows>
+        <name>Staff_Hub_Flow_Init</name>
+        <label>Staff Hub Flow Init</label>
+        <locationX>155</locationX>
+        <locationY>47</locationY>
+        <connector>
+            <targetReference>Source_question</targetReference>
+        </connector>
+        <flowName>arcuscrm__CRM_STAFF_HUB_SUBFLOW_LOAD_RT_USER_CONTACT_BEFORE_CASE_FLOW</flowName>
+        <inputAssignments>
+            <name>caseRecordTypeDevName</name>
+            <value>
+                <elementReference>caseRecordTypeDevName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>contactId</name>
+            <value>
+                <elementReference>contactId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>councilServiceId</name>
+            <value>
+                <elementReference>councilServiceId</elementReference>
+            </value>
+        </inputAssignments>
+        <outputAssignments>
+            <assignToReference>CurrCouncilService</assignToReference>
+            <name>CouncilService</name>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>NewCase</assignToReference>
+            <name>NewCase</name>
+        </outputAssignments>
+    </subflows>
+    <textTemplates>
+        <name>caseDecription2</name>
+        <text>Details of Incident:
+{!Incident_Details}
+
+Date and Time of the Incident: {!Incident_Date_and_Time}
+
+Details of any injuries or damage to property:
+{!Details_of_Injury}
+
+Details of how or why you feel the council have acted negligently:
+{!Details_of_negligence}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>caseDescription</name>
+        <text>Customer name: {!Customer_Name}
+Address:
+{!Customer_Address}
+----------------------------------------------------
+Date of Birth: {!Customer_Date_of_Birth}
+Contact Number:  {!Customer_Phone_Number}
+Email Address:  {!Customer_Email_Address}
+----------------------------------------------------
+Claim Details
+Details of Incident:
+{!Incident_Details}
+Date and Time of the Incident: {!Incident_Date_and_Time}
+Details of any injuries or damage to property:
+{!Details_of_Injury}
+Details of how or why you feel the council have acted negligently:
+!Details_of_negligence}</text>
+    </textTemplates>
+    <variables>
+        <name>caseRecordTypeDevName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>CRM_Internal_Request</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>passed into the flow</description>
+        <name>contactId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Passed into the flow</description>
+        <name>councilServiceId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The current council service</description>
+        <name>CurrCouncilService</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>arcshared__Council_Service__c</objectType>
+    </variables>
+    <variables>
+        <description>Represents the new case</description>
+        <name>NewCase</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+    <variables>
+        <name>valueStafforpublic</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

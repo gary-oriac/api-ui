@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Set_Flag_to_word_found</name>
+        <label>Set Flag to word found</label>
+        <locationX>247</locationX>
+        <locationY>418</locationY>
+        <assignmentItems>
+            <assignToReference>webcomment.language_flags__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>potential</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Write_back</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_if_text_contains_word</name>
+        <label>Check if text contains word</label>
+        <locationX>238</locationX>
+        <locationY>296</locationY>
+        <defaultConnector>
+            <targetReference>Loop_through_each_bad_word</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>Bad_word_found</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>webcomment.arcshared__Original_Text__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <elementReference>wordtofind.Text_to_check__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>webcomment.arcshared__Text__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <elementReference>wordtofind.Text_to_check__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Flag_to_word_found</targetReference>
+            </connector>
+            <label>Bad word found</label>
+        </rules>
+    </decisions>
+    <description>Checks the original text on a web comment to see if it contains a word on the bad words list custom metadata type</description>
+    <interviewLabel>Bad word check {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Bad word check</label>
+    <loops>
+        <name>Loop_through_each_bad_word</name>
+        <label>Loop through each bad word</label>
+        <locationX>187</locationX>
+        <locationY>144</locationY>
+        <assignNextValueToReference>wordtofind</assignNextValueToReference>
+        <collectionReference>Badwords</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Check_if_text_contains_word</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>find_bad_word_list</name>
+        <label>find bad word list</label>
+        <locationX>123</locationX>
+        <locationY>21</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_through_each_bad_word</targetReference>
+        </connector>
+        <object>Bad_Word__mdt</object>
+        <outputReference>Badwords</outputReference>
+        <queriedFields>Text_to_check__c</queriedFields>
+        <queriedFields>Label</queriedFields>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>DeveloperName</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <name>Write_back</name>
+        <label>Write back</label>
+        <locationX>340</locationX>
+        <locationY>531</locationY>
+        <inputReference>webcomment</inputReference>
+    </recordUpdates>
+    <startElementReference>find_bad_word_list</startElementReference>
+    <status>Active</status>
+    <variables>
+        <description>holds the specific text string being tested</description>
+        <name>badtext</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>stores the bad words for use</description>
+        <name>Badwords</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Bad_Word__mdt</objectType>
+    </variables>
+    <variables>
+        <description>Holds the detail of the web comment that triggered the flow</description>
+        <name>webcomment</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>arcshared__Web_Comment__c</objectType>
+    </variables>
+    <variables>
+        <description>holds the single bad word record currently being checked</description>
+        <name>wordtofind</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Bad_Word__mdt</objectType>
+    </variables>
+</Flow>

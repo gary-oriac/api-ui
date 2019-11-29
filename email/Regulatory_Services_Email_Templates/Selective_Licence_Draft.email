@@ -1,0 +1,13 @@
+<p>Dear {!arcusregserv__RS_Activity__c.arcusregserv__Contact__r.Salutation} {!arcusregserv__RS_Activity__c.arcusregserv__Contact__r.FirstName} {!arcusregserv__RS_Activity__c.arcusregserv__Contact__r.LastName},
+
+<p>Further to your application for selective licensing of {!arcusregserv__RS_Activity__c.arcusregserv__Licence_Record_Type__c} application, we now have pleasure in enclosing the draft licence with proposed licence conditions.
+
+<p>The legislation states that all licences and conditions  are issued in draft  and are subject to a 28 day consultation period.
+
+<p>If you wish to make representations, please do so within the above timescale by sending them to  (email address). Any representations made after the consultation period will not be considered.
+ 
+<p>If no representations are received the licence will be issued upon expiry of the consultation period.
+
+<p>Yours Sincerely, 
+<br>Housing Enforcement Team 
+<br>Peterborough City Council

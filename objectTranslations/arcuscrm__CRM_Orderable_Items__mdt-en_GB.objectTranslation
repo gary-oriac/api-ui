@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Please classify the item into an appropriate group --></help>
+        <label><!-- Category --></label>
+        <name>arcuscrm__Category__c</name>
+        <picklistValues>
+            <masterLabel>Commercial Waste</masterLabel>
+            <translation><!-- Commercial Waste --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Domestic Waste</masterLabel>
+            <translation><!-- Domestic Waste --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parking</masterLabel>
+            <translation><!-- Parking --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicates that the item is active and available for use. --></help>
+        <label><!-- Currently Active --></label>
+        <name>arcuscrm__Currently_Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- A description of the item --></help>
+        <label><!-- Description --></label>
+        <name>arcuscrm__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- When the product ceases to be available --></help>
+        <label><!-- End Date --></label>
+        <name>arcuscrm__End_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- contains a link for a picture of the item if applicable --></help>
+        <label><!-- Image URL --></label>
+        <name>arcuscrm__Image_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- This groups the product within the categories. --></help>
+        <label><!-- Item Type --></label>
+        <name>arcuscrm__Item_Type__c</name>
+        <picklistValues>
+            <masterLabel>Bins</masterLabel>
+            <translation><!-- Bins --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sacks</masterLabel>
+            <translation><!-- Sacks --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The cost of the item to purchase from the Council --></help>
+        <label><!-- Net Price --></label>
+        <name>arcuscrm__Net_price__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of items purchased for the cost --></help>
+        <label><!-- Pack Size --></label>
+        <name>arcuscrm__Pack_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a date that defines when the product will be available from. --></help>
+        <label><!-- Start Date --></label>
+        <name>arcuscrm__Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tax level assigned to the item --></help>
+        <label><!-- Tax Percent --></label>
+        <name>arcuscrm__Tax_Percent__c</name>
+    </fields>
+</CustomObjectTranslation>

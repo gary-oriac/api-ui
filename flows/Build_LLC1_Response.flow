@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Append_Appeal_summary</name>
+        <label>Append Appeal summary</label>
+        <locationX>1327</locationX>
+        <locationY>2207</locationY>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Nature__c</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>appealSummaryText</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Response</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Append_to_appeal_summary</name>
+        <label>Append to appeal summary</label>
+        <locationX>794</locationX>
+        <locationY>2341</locationY>
+        <assignmentItems>
+            <assignToReference>appealSummaryText</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>appealTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_over_appeals</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Part_4_Orders</name>
+        <label>Set Part 4 Orders Nature</label>
+        <locationX>1915</locationX>
+        <locationY>772</locationY>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Nature__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>part4OrderTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Response</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Ancient_Monument_Nature</name>
+        <label>Set Ancient Monument Nature</label>
+        <locationX>1846</locationX>
+        <locationY>882</locationY>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Nature__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ancientMonumentTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Response</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Compulsory_Purchase_Order_Nature</name>
+        <label>Set Compulsory Purchase Order Nature</label>
+        <locationX>1964</locationX>
+        <locationY>383</locationY>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Nature__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>compulsoryPurchaseOrderTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Response</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Conservation_Area_Nature</name>
+        <label>Set Conservation Area Nature</label>
+        <locationX>867</locationX>
+        <locationY>241</locationY>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Nature__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>conversationAreaTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Response</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Enforcement_Notices_Nature</name>
+        <label>Set Enforcement Notices Nature</label>
+        <locationX>180</locationX>
+        <locationY>1780</locationY>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Nature__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>enforcementNoticesTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Response</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_general_response_fields</name>
+        <label>Set general response fields</label>
+        <locationX>941</locationX>
+        <locationY>881</locationY>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Authority__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>originatingAuthText</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Register_Part_Full__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>registerRecord.arcuslandcharge__Register_Part__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Document_Store__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>registerRecord.arcuslandcharge__Document_Store__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Registration_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>registerRecord.arcuslandcharge__Date_of_Registration__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Land_Charge_Name__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>registerRecord.arcuslandcharge__Name__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Determine_Register_Type</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Grant_Response_Nature</name>
+        <label>Set Grant Response Nature</label>
+        <locationX>1846</locationX>
+        <locationY>495</locationY>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Nature__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>grantResponseTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Response</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Listed_Building_Nature</name>
+        <label>Set Listed Building Nature</label>
+        <locationX>252</locationX>
+        <locationY>1236</locationY>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Nature__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>listedBuildingTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Response</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Misc_Part_4_Nature</name>
+        <label>Set Misc Part 4 Nature</label>
+        <locationX>1322</locationX>
+        <locationY>570</locationY>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Nature__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>miscPart4ResponseTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Response</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Nature_of_Charge_as_Description</name>
+        <label>Set Nature of Charge as Description</label>
+        <locationX>1358</locationX>
+        <locationY>1003</locationY>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Nature__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>registerRecord.arcuslandcharge__Description_Long__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Response</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Part_3_Revocation_Nature</name>
+        <label>Set Part 3 / Revocation Nature</label>
+        <locationX>2035</locationX>
+        <locationY>689</locationY>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Nature__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>part3RevocationTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Response</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Part_4_Agreement_Nature</name>
+        <label>Set Part 4 Agreement Nature</label>
+        <locationX>1444</locationX>
+        <locationY>190</locationY>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Nature__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>part4AgreementsTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Response</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Part_4_NoticeNature</name>
+        <label>Set Part 4 NoticeNature</label>
+        <locationX>1014</locationX>
+        <locationY>326</locationY>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Nature__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>part4NoticesTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Response</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Part_6_Nature</name>
+        <label>Set Part 6 Nature</label>
+        <locationX>894</locationX>
+        <locationY>452</locationY>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Nature__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>registerPart6Template</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Response</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_planning_nature_of_charge</name>
+        <label>Set planning nature of charge</label>
+        <locationX>1007</locationX>
+        <locationY>2197</locationY>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Nature__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>planningTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Append_Appeal_summary</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Register_Part_11_Nature</name>
+        <label>Set Register Part 11 Nature</label>
+        <locationX>1712</locationX>
+        <locationY>180</locationY>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Nature__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>registerPart11Template</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Response</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Register_Part_1_or_2_Nature</name>
+        <label>Set Register Part 1 or 2 Nature</label>
+        <locationX>780</locationX>
+        <locationY>381</locationY>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Nature__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>registerPart1Or2Template</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Response</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Section_106_or_Section_52_Nature</name>
+        <label>Set Section 106 or Section 52 Nature</label>
+        <locationX>519</locationX>
+        <locationY>1361</locationY>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Nature__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>section106or52Template</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Response</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Site_Of_Special_Scientific_Interest_Nature</name>
+        <label>Set Site Of Special Scientific Interest Nature</label>
+        <locationX>1192</locationX>
+        <locationY>668</locationY>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Nature__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>siteOfSpecialScientificInterest</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Response</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_TPO_Nature_of_Charge</name>
+        <label>Set TPO Nature of Charge</label>
+        <locationX>400</locationX>
+        <locationY>1299</locationY>
+        <assignmentItems>
+            <assignToReference>llc1responseRecord.arcuslandcharge__Nature__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>tpoTemplate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Response</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Determine_Register_Type</name>
+        <label>Determine Register Type</label>
+        <locationX>1063</locationX>
+        <locationY>867</locationY>
+        <defaultConnector>
+            <targetReference>Set_Nature_of_Charge_as_Description</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No underlying record</defaultConnectorLabel>
+        <rules>
+            <name>Planning</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>registerRecord.arcuslandcharge__Planning_Application__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Planning_App</targetReference>
+            </connector>
+            <label>Planning</label>
+        </rules>
+        <rules>
+            <name>Tree_Preservation_Order</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>registerRecord.arcuslandcharge__Tree_Preservation_Order__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_TPO</targetReference>
+            </connector>
+            <label>Tree Preservation Order</label>
+        </rules>
+        <rules>
+            <name>Listed_Buildings</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>registerRecord.arcuslandcharge__Asset__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Listed_Building_Asset</targetReference>
+            </connector>
+            <label>Listed Buildings</label>
+        </rules>
+        <rules>
+            <name>Charge_Code</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>registerRecord.arcuslandcharge__Charge_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Part 3 Orders</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>registerRecord.arcuslandcharge__Charge_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Revocation Orders</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Part_3_Revocation_Nature</targetReference>
+            </connector>
+            <label>Charge Code 3 / Revocation</label>
+        </rules>
+        <rules>
+            <name>Charge_Code_Part_4_Order</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>registerRecord.arcuslandcharge__Charge_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Part 4 Orders</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Part_4_Orders</targetReference>
+            </connector>
+            <label>Charge Code Part 4 Order</label>
+        </rules>
+        <rules>
+            <name>Charge_Code_Ancient_Monuments</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>registerRecord.arcuslandcharge__Charge_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Ancient Monuments</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Ancient_Monument_Nature</targetReference>
+            </connector>
+            <label>Charge Code Ancient Monuments</label>
+        </rules>
+        <rules>
+            <name>Charge_Code_Compulsory_Purchase_Order</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>registerRecord.arcuslandcharge__Charge_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Compulsory Purchase Orders</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Compulsory_Purchase_Order_Nature</targetReference>
+            </connector>
+            <label>Charge Code Compulsory Purchase Order</label>
+        </rules>
+        <rules>
+            <name>Charge_Code_Grants</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>registerRecord.arcuslandcharge__Charge_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Grants</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Grant_Response_Nature</targetReference>
+            </connector>
+            <label>Charge Code Grants</label>
+        </rules>
+        <rules>
+            <name>Charge_Code_Misc_Part_4s</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>registerRecord.arcuslandcharge__Charge_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Miscellaneous Part 4s</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Misc_Part_4_Nature</targetReference>
+            </connector>
+            <label>Charge Code Misc Part 4s</label>
+        </rules>
+        <rules>
+            <name>Charge_Code_Part_4_Agreements</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>registerRecord.arcuslandcharge__Charge_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Part 4 Agreements</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Part_4_Agreement_Nature</targetReference>
+            </connector>
+            <label>Charge Code Part 4 Agreements</label>
+        </rules>
+        <rules>
+            <name>Charge_Code_Part_4_Notice</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>registerRecord.arcuslandcharge__Charge_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Part 4 Notices</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Part_4_NoticeNature</targetReference>
+            </connector>
+            <label>Charge Code Part 4 Notice</label>
+        </rules>
+        <rules>
+            <name>Charge_Code_Site_of_Special_Scientific_Interest</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>registerRecord.arcuslandcharge__Charge_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Special Sites of Scientific Interest</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Site_Of_Special_Scientific_Interest_Nature</targetReference>
+            </connector>
+            <label>Charge Code Site of Special Scientific Interest</label>
+        </rules>
+        <rules>
+            <name>Part_6</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>registerRecord.arcuslandcharge__Register_Part__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Part 6: Land Compensation Charges</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Part_6_Nature</targetReference>
+            </connector>
+            <label>Part 6</label>
+        </rules>
+        <rules>
+            <name>Register_Part_11</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>registerRecord.arcuslandcharge__Register_Part__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Part 11: Light Obstruction Notices</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Register_Part_11_Nature</targetReference>
+            </connector>
+            <label>Register Part 11</label>
+        </rules>
+        <rules>
+            <name>Register_Part_1_or_2</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>registerRecord.arcuslandcharge__Register_Part__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Part 1: General Financial Charges</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>registerRecord.arcuslandcharge__Register_Part__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Part 2: Specific Financial Charges</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Register_Part_1_or_2_Nature</targetReference>
+            </connector>
+            <label>Register Part 1 or 2</label>
+        </rules>
+        <rules>
+            <name>Charge_Code_Conservation_Area</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>registerRecord.arcuslandcharge__Charge_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Conservation Areas</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Conservation_Area_Nature</targetReference>
+            </connector>
+            <label>Charge Code Conservation Area</label>
+        </rules>
+        <rules>
+            <name>Charge_Code_Planning_Notices_Lookup_to_Enforcement_Notice</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>registerRecord.arcuslandcharge__Charge_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Planning Notices</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>registerRecord.Action__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Enforcement_Notices_Nature</targetReference>
+            </connector>
+            <label>Charge Code Planning Notices / Lookup to Enforcement Notice</label>
+        </rules>
+        <rules>
+            <name>Charge_Code_Section_106_or_52</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>registerRecord.arcuslandcharge__Charge_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Section 106</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>registerRecord.arcuslandcharge__Charge_Code__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Section 52s</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Section_106_or_Section_52_Nature</targetReference>
+            </connector>
+            <label>Charge Code Section 106 or 52</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Manual</name>
+        <label>Is Manual</label>
+        <locationX>839</locationX>
+        <locationY>754</locationY>
+        <defaultConnector>
+            <targetReference>Get_Register</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Automatic</defaultConnectorLabel>
+        <rules>
+            <name>Manual</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>llc1responseRecord.arcuslandcharge__Manual_LLC1_Entry__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Manual</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <name>newLine</name>
+        <dataType>String</dataType>
+        <expression>BR()</expression>
+    </formulas>
+    <formulas>
+        <name>originatingAuthText</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!registerRecord.arcuslandcharge__Originating_Authority__c})</expression>
+    </formulas>
+    <interviewLabel>Build LLC1 Response {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Build LLC1 Response</label>
+    <loops>
+        <name>Loop_over_appeals</name>
+        <label>Loop over appeals</label>
+        <locationX>677</locationX>
+        <locationY>2204</locationY>
+        <assignNextValueToReference>appealLoopVar</assignNextValueToReference>
+        <collectionReference>appeals</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Append_to_appeal_summary</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Set_planning_nature_of_charge</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Appeals</name>
+        <label>Get Appeals</label>
+        <locationX>500</locationX>
+        <locationY>2244</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_over_appeals</targetReference>
+        </connector>
+        <filters>
+            <field>arcusbuiltenv__Planning_Application__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>planningAppRecord.Id</elementReference>
+            </value>
+        </filters>
+        <object>arcusbuiltenv__Appeal__c</object>
+        <outputReference>appeals</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>arcusbuiltenv__Lodged_Date__c</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <queriedFields>arcusbuiltenv__Reference__c</queriedFields>
+        <queriedFields>Decision_Text__c</queriedFields>
+        <queriedFields>arcusbuiltenv__Last_Decision_Date__c</queriedFields>
+        <sortField>arcusbuiltenv__Lodged_Date__c</sortField>
+        <sortOrder>Asc</sortOrder>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Listed_Building_Asset</name>
+        <label>Get Listed Building Asset</label>
+        <locationX>279</locationX>
+        <locationY>1029</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Listed_Building_Nature</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>registerRecord.arcuslandcharge__Asset__c</elementReference>
+            </value>
+        </filters>
+        <object>Asset</object>
+        <outputReference>assetListedBuilding</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <queriedFields>Description</queriedFields>
+        <queriedFields>arcusbuiltenv__Site_Address__c</queriedFields>
+        <queriedFields>arcusbuiltenv__Listed_Building_Grade__c</queriedFields>
+        <queriedFields>arcusbuiltenv__List_Entry_Number__c</queriedFields>
+        <queriedFields>arcusbuiltenv__Date_First_Registered__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Planning_App</name>
+        <label>Get Planning App</label>
+        <locationX>376</locationX>
+        <locationY>2342</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Appeals</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>registerRecord.arcuslandcharge__Planning_Application__c</elementReference>
+            </value>
+        </filters>
+        <object>arcusbuiltenv__Planning_Application__c</object>
+        <outputReference>planningAppRecord</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <queriedFields>arcusbuiltenv__Site_Address__c</queriedFields>
+        <queriedFields>arcusbuiltenv__Proposal__c</queriedFields>
+        <queriedFields>arcusbuiltenv__Current_Decision_Date__c</queriedFields>
+        <queriedFields>arcusbuiltenv__Type__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Register</name>
+        <label>Get Register</label>
+        <locationX>847</locationX>
+        <locationY>881</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_general_response_fields</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>llc1responseRecord.arcuslandcharge__Land_Charge_Register__c</elementReference>
+            </value>
+        </filters>
+        <object>arcuslandcharge__LC_Register__c</object>
+        <outputReference>registerRecord</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>arcuslandcharge__Register_Part__c</queriedFields>
+        <queriedFields>arcuslandcharge__Planning_Application__c</queriedFields>
+        <queriedFields>arcuslandcharge__Planning_Obligation__c</queriedFields>
+        <queriedFields>arcuslandcharge__Asset__c</queriedFields>
+        <queriedFields>arcuslandcharge__Building_Control_Application__c</queriedFields>
+        <queriedFields>arcuslandcharge__Date_of_Registration__c</queriedFields>
+        <queriedFields>arcuslandcharge__Originating_Authority_TEXT__c</queriedFields>
+        <queriedFields>arcuslandcharge__Description_Long__c</queriedFields>
+        <queriedFields>arcuslandcharge__Document_Store__c</queriedFields>
+        <queriedFields>arcuslandcharge__Name__c</queriedFields>
+        <queriedFields>arcuslandcharge__Registration_Site__c</queriedFields>
+        <queriedFields>Legislation__c</queriedFields>
+        <queriedFields>arcuslandcharge__Tree_Preservation_Order__c</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <queriedFields>arcuslandcharge__Charge_Code__c</queriedFields>
+        <queriedFields>Document_Date__c</queriedFields>
+        <queriedFields>LLC_Reference_Number__c</queriedFields>
+        <queriedFields>Effective_Date__c</queriedFields>
+        <queriedFields>arcuslandcharge__Charge_Amount__c</queriedFields>
+        <queriedFields>Parties_to_the_Agreement__c</queriedFields>
+        <queriedFields>arcuslandcharge__Land_Description__c</queriedFields>
+        <queriedFields>arcuslandcharge__Land_Particulars__c</queriedFields>
+        <queriedFields>arcuslandcharge__Expiration_Date__c</queriedFields>
+        <queriedFields>arcuslandcharge__Building_Details__c</queriedFields>
+        <queriedFields>arcuslandcharge__Interest_Rate__c</queriedFields>
+        <queriedFields>arcuslandcharge__Originating_Authority__c</queriedFields>
+        <queriedFields>Action__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Response</name>
+        <label>Get Response</label>
+        <locationX>745</locationX>
+        <locationY>752</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_Manual</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>responseId</elementReference>
+            </value>
+        </filters>
+        <object>arcuslandcharge__LLC1_Response__c</object>
+        <outputReference>llc1responseRecord</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <queriedFields>arcuslandcharge__Document_Store__c</queriedFields>
+        <queriedFields>arcuslandcharge__Land_Charge_Register__c</queriedFields>
+        <queriedFields>arcuslandcharge__Nature__c</queriedFields>
+        <queriedFields>arcuslandcharge__Authority__c</queriedFields>
+        <queriedFields>arcuslandcharge__Registration_Date__c</queriedFields>
+        <queriedFields>arcuslandcharge__Register_Part__c</queriedFields>
+        <queriedFields>arcuslandcharge__Manual_LLC1_Entry__c</queriedFields>
+        <queriedFields>arcuslandcharge__Land_Charge_Name__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_TPO</name>
+        <label>Get TPO</label>
+        <locationX>426</locationX>
+        <locationY>1076</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_TPO_Nature_of_Charge</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>registerRecord.arcuslandcharge__Tree_Preservation_Order__c</elementReference>
+            </value>
+        </filters>
+        <object>arcusbuiltenv__Tree_Preservation_Order__c</object>
+        <outputReference>tpoRecord</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Name</queriedFields>
+        <queriedFields>arcusbuiltenv__Confirmation_Date__c</queriedFields>
+        <queriedFields>arcusbuiltenv__Site_Address__c</queriedFields>
+        <queriedFields>arcusbuiltenv__Description__c</queriedFields>
+        <queriedFields>arcusbuiltenv__Date_Order_Effective__c</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Response</name>
+        <label>Update Response</label>
+        <locationX>2484</locationX>
+        <locationY>1235</locationY>
+        <inputReference>llc1responseRecord</inputReference>
+    </recordUpdates>
+    <startElementReference>Get_Response</startElementReference>
+    <status>Active</status>
+    <textTemplates>
+        <name>ancientMonumentTemplate</name>
+        <text>Registration Site: {!registerRecord.arcuslandcharge__Registration_Site__c}
+Document Date: {!registerRecord.Document_Date__c}
+Description: {!registerRecord.arcuslandcharge__Description_Long__c}
+Legislation: {!registerRecord.Legislation__c}
+Name: {!registerRecord.Name}
+{!newLine}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>appealTemplate</name>
+        <text>{!newLine}Appeal reference: {!appealLoopVar.Name}
+Date Lodged: {!appealLoopVar.arcusbuiltenv__Lodged_Date__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>compulsoryPurchaseOrderTemplate</name>
+        <text>Registration Site: {!registerRecord.arcuslandcharge__Registration_Site__c}
+Description: {!registerRecord.arcuslandcharge__Description_Long__c}
+Legislation: {!registerRecord.Legislation__c}
+Name: {!registerRecord.Name}
+{!newLine}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>conversationAreaTemplate</name>
+        <text>{!registerRecord.arcuslandcharge__Description_Long__c}
+Effective Date: {!registerRecord.Effective_Date__c}
+designated by the virtue of {!registerRecord.Legislation__c}
+LLC Reference: {!registerRecord.LLC_Reference_Number__c}
+Name: {!registerRecord.Name}
+{!newLine}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>enforcementNoticesTemplate</name>
+        <text>Registration Site: {!registerRecord.arcuslandcharge__Registration_Site__c}
+Document Date: {!registerRecord.Document_Date__c}
+Effective Date: {!registerRecord.Effective_Date__c}
+Description: {!registerRecord.arcuslandcharge__Description_Long__c}
+Legislation: {!registerRecord.Legislation__c}
+LLC Reference Number: {!registerRecord.LLC_Reference_Number__c}
+Name: {!registerRecord.Name}
+{!newLine}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>grantResponseTemplate</name>
+        <text>Registration Site: {!registerRecord.arcuslandcharge__Registration_Site__c}
+Initial Charge Amount: {!registerRecord.arcuslandcharge__Charge_Amount__c}
+Description: {!registerRecord.arcuslandcharge__Description_Long__c}
+Legislation: {!registerRecord.Legislation__c}
+Name: {!registerRecord.Name}
+{!newLine}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>listedBuildingTemplate</name>
+        <text>Address: {!assetListedBuilding.arcusbuiltenv__Site_Address__c}
+Grade: {!assetListedBuilding.arcusbuiltenv__Listed_Building_Grade__c}
+Description: {!registerRecord.arcuslandcharge__Description_Long__c}
+List Number: {!assetListedBuilding.arcusbuiltenv__List_Entry_Number__c}
+Date of listing: {!assetListedBuilding.arcusbuiltenv__Date_First_Registered__c}
+Legislation: {!registerRecord.Legislation__c}
+Reference: {!assetListedBuilding.Name}
+{!newLine}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>miscPart4ResponseTemplate</name>
+        <text>Registration Site: {!registerRecord.arcuslandcharge__Registration_Site__c}
+Description: {!registerRecord.arcuslandcharge__Description_Long__c}
+Parties to the Agreement: {!registerRecord.Parties_to_the_Agreement__c}
+Legislation: {!registerRecord.Legislation__c}
+LLC Reference Number: {!registerRecord.LLC_Reference_Number__c}
+Name: {!registerRecord.Name}
+{!newLine}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>part3RevocationTemplate</name>
+        <text>Registration Site: {!registerRecord.arcuslandcharge__Registration_Site__c}
+Description: {!registerRecord.arcuslandcharge__Description_Long__c}
+Document Date: {!registerRecord.Document_Date__c}
+Legislation: {!registerRecord.Legislation__c}
+LLC Reference Number: {!registerRecord.LLC_Reference_Number__c}
+Name: {!registerRecord.Name}
+{!newLine}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>part4AgreementsTemplate</name>
+        <text>Registration Site: {!registerRecord.arcuslandcharge__Registration_Site__c}
+Part 4 Agreement
+Parties to the Agreement: {!registerRecord.Parties_to_the_Agreement__c}
+Description: {!registerRecord.arcuslandcharge__Description_Long__c}
+Legislation: {!registerRecord.Legislation__c}
+LLC Reference Number: {!registerRecord.LLC_Reference_Number__c}
+Name: {!registerRecord.Name}
+{!newLine}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>part4NoticesTemplate</name>
+        <text>Registration Site: {!registerRecord.arcuslandcharge__Registration_Site__c}
+Legislation: {!registerRecord.Legislation__c}
+Document Date: {!registerRecord.Document_Date__c}
+Description: {!registerRecord.arcuslandcharge__Description_Long__c}
+Name: {!registerRecord.Name}
+{!newLine}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>part4OrderTemplate</name>
+        <text>Registration Site: {!registerRecord.arcuslandcharge__Registration_Site__c}
+Document Date: {!registerRecord.Document_Date__c}
+Effective Date: {!registerRecord.Effective_Date__c}
+Description: {!registerRecord.arcuslandcharge__Description_Long__c}
+Legislation: {!registerRecord.Legislation__c}
+Name: {!registerRecord.Name}
+{!newLine}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>planningTemplate</name>
+        <text>{!planningAppRecord.arcusbuiltenv__Type__c} Planning Permission
+Decision issued: {!planningAppRecord.arcusbuiltenv__Current_Decision_Date__c}
+{!planningAppRecord.arcusbuiltenv__Proposal__c}
+Application Number: {!planningAppRecord.Name}
+{!newLine}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>registerPart11Template</name>
+        <text>Obstruction to the access of light
+Legislation: {!registerRecord.Legislation__c}
+Expiry date: {!registerRecord.arcuslandcharge__Expiration_Date__c}
+Description: {!registerRecord.arcuslandcharge__Description_Long__c}
+Building details: {!registerRecord.arcuslandcharge__Building_Details__c}
+Name: {!registerRecord.Name}
+{!newLine}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>registerPart1Or2Template</name>
+        <text>Registration Site: {!registerRecord.arcuslandcharge__Registration_Site__c}
+Legislation: {!registerRecord.Legislation__c}
+Initial Amount: {!registerRecord.arcuslandcharge__Charge_Amount__c}
+Interest Rate: {!registerRecord.arcuslandcharge__Interest_Rate__c}
+Name: {!registerRecord.Name}
+{!newLine}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>registerPart6Template</name>
+        <text>Registration Site: {!registerRecord.arcuslandcharge__Registration_Site__c}
+Description: {!registerRecord.arcuslandcharge__Description_Long__c}
+Legislation: {!registerRecord.Legislation__c}
+Land Description: {!registerRecord.arcuslandcharge__Land_Description__c}
+Land Particulars: {!registerRecord.arcuslandcharge__Land_Particulars__c}
+Name: {!registerRecord.Name}
+{!newLine}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>section106or52Template</name>
+        <text>Registration Site: {!registerRecord.arcuslandcharge__Registration_Site__c}
+Description: {!registerRecord.arcuslandcharge__Description_Long__c}
+Document Date: {!registerRecord.Document_Date__c}
+Parties: {!registerRecord.Parties_to_the_Agreement__c}
+Legislation: {!registerRecord.Legislation__c}
+LLC Reference Number: {!registerRecord.LLC_Reference_Number__c}
+Name: {!registerRecord.Name}
+{!newLine}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>siteOfSpecialScientificInterest</name>
+        <text>Registration Site: {!registerRecord.arcuslandcharge__Registration_Site__c}
+Site of Special Scientific Interest
+Document Date: {!registerRecord.Document_Date__c}
+Description: {!registerRecord.arcuslandcharge__Description_Long__c}
+Legislation: {!registerRecord.Legislation__c}
+Name: {!registerRecord.Name}
+{!newLine}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>tpoTemplate</name>
+        <text>{!tpoRecord.arcusbuiltenv__Site_Address__c}
+Tree Preservation Order: {!tpoRecord.Name}
+{!tpoRecord.arcusbuiltenv__Description__c}
+Confirmed: {!tpoRecord.arcusbuiltenv__Confirmation_Date__c}
+{!registerRecord.Legislation__c}
+Arcus Reference: {!registerRecord.Name}
+{!newLine}</text>
+    </textTemplates>
+    <variables>
+        <name>appealLoopVar</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>arcusbuiltenv__Appeal__c</objectType>
+    </variables>
+    <variables>
+        <name>appeals</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>arcusbuiltenv__Appeal__c</objectType>
+    </variables>
+    <variables>
+        <name>appealSummaryText</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>assetListedBuilding</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Asset</objectType>
+    </variables>
+    <variables>
+        <name>llc1responseRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>arcuslandcharge__LLC1_Response__c</objectType>
+    </variables>
+    <variables>
+        <name>planningAppRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>arcusbuiltenv__Planning_Application__c</objectType>
+    </variables>
+    <variables>
+        <name>planningNatureofCharge</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>registerRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>arcuslandcharge__LC_Register__c</objectType>
+    </variables>
+    <variables>
+        <name>responseId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>tpoRecord</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>arcusbuiltenv__Tree_Preservation_Order__c</objectType>
+    </variables>
+</Flow>

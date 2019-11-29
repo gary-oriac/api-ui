@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <interviewLabel>Find {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Find ID of queue with dev name New_Enforcements_Queue</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Find_ID_of_Queue_with_dev_name_New_Enforcements_Queue</name>
+        <label>Find ID of Queue with dev name New_Enforcements_Queue</label>
+        <locationX>380</locationX>
+        <locationY>232</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Enfrocement_Owner</targetReference>
+        </connector>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>New_Enforcements_Queue</stringValue>
+            </value>
+        </filters>
+        <object>Group</object>
+        <outputAssignments>
+            <assignToReference>QueueID.Id</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Enfrocement_Owner</name>
+        <label>Update Enfrocement Owner</label>
+        <locationX>520</locationX>
+        <locationY>458</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>EnforcementCaseId.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>QueueID.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>arcusbuiltenv__Enforcement__c</object>
+    </recordUpdates>
+    <startElementReference>Find_ID_of_Queue_with_dev_name_New_Enforcements_Queue</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>EnforcementCaseId</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>arcusbuiltenv__Enforcement__c</objectType>
+    </variables>
+    <variables>
+        <description>Stores the ID of the Queue</description>
+        <name>QueueID</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Group</objectType>
+    </variables>
+</Flow>

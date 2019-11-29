@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Insurance Case Management Queue</name>
+    <queueMembers>
+        <users>
+            <user>jamie.harding@folkestone-hythe.gov.uk</user>
+            <user>leigh.hall@folkestone-hythe.gov.uk</user>
+            <user>rachel.hedges@folkestone-hythe.gov.uk</user>
+            <user>sue.carr@folkestone-hythe.gov.uk</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

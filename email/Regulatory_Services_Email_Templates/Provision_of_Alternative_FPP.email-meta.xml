@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Provision of Alternative F&amp;PP</name>
+    <style>none</style>
+    <subject>Selective Licence: Provision of Alternative Fit and Proper Person</subject>
+    <textOnly>Dear {!arcusregserv__RS_Activity__c.arcusregserv__Contact__r.Salutation} {!arcusregserv__RS_Activity__c.arcusregserv__Contact__r.FirstName} {!arcusregserv__RS_Activity__c.arcusregserv__Contact__r.LastName},
+
+Further to your application for selective licensing of {!arcusregserv__RS_Activity__c.arcusregserv__Licence_Record_Type__c} application.
+
+Your application cannot be progressed any further as [enter full name of fit and proper person] has not passed the ‘Fit and Proper’ requirement to enable them to be the [licenceholder/manager] of this property.
+
+You must therefore find an alternative licenceholder/manager who cannot be connected to [enter full name of fit and proper person] by family or business connections.  You application has been re-opened for you to provide details of the replacement licence holder/manager. Please visit your ‘MyAccount’ within the next 7 days to provide the relevant details and documentation.
+
+You have the right of appeal against this decision to the First Tier Tribunal
+
+If you wish to discuss the matter further or would like advice on this matter please contact the case officer.
+
+Yours Sincerely,
+Housing Enforcement Team
+Peterborough City Council</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

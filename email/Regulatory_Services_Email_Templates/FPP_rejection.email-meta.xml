@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>F&amp;PP rejection</name>
+    <style>none</style>
+    <subject>Your application for a Selective Licence has been rejected</subject>
+    <textOnly>Dear {!Contact.Name},
+
+We are sorry to inform you that your application for a Selective Licence has been rejected, on the grounds of...</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

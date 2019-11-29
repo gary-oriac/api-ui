@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;div class=&quot;slds-clearfix&quot;&gt;
+    &lt;a href=&quot;/pr/s/&quot; class=&quot;slds-button slds-button_brand slds-float_right&quot;&gt;Public register home&lt;/a&gt;
+&lt;/div&gt;</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:htmlBlock</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;h1&gt;Public Register consultee login&lt;/h1&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:richTextInline</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>forgotPasswordLabel</name>
+                <value>Forgot your password?</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>forgotPasswordUrl</name>
+                <value>/ForgotPassword</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>loginButtonLabel</name>
+                <value>Log in</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>passwordLabel</name>
+                <value>Password</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>selfRegisterLabel</name>
+                <value>Not a member?</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>selfRegisterUrl</name>
+                <value>/SelfRegister</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>startUrl</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>usernameLabel</name>
+                <value>Email</value>
+            </componentInstanceProperties>
+            <componentName>salesforceIdentity:loginForm2</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>headerText</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showHeader</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentName>salesforceIdentity:socialLogin2</componentName>
+        </componentInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>description</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>metaTags</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Login</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:seoAssistant</componentName>
+        </componentInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <name>mainColumn</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>Login</masterLabel>
+    <template>
+        <name>DSHLC_Layout_1ColFullWidth</name>
+    </template>
+    <type>CommLoginPage</type>
+</FlexiPage>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Council_Tax_Amount__c</fullName>
+        <description>The overall amount for the Council Tax.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please supply the overall amount for the Council Tax.</inlineHelpText>
+        <label>Council Tax Amount</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Council_Tax_Band__c</fullName>
+        <description>The Council Tax Band (i.e. A-H).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please supply the Council Tax Band (i.e. A-H).</inlineHelpText>
+        <label>Council Tax Band</label>
+        <length>1</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Council_Tax_Year__c</fullName>
+        <defaultValue>"20xx/20xx"</defaultValue>
+        <description>The council tax year (aka period) - e.g. '2018/2019'.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please supply the council tax year (aka period) - e.g. '2018/2019'.</inlineHelpText>
+        <label>Council Tax Year</label>
+        <length>9</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>County_Council_Amount__c</fullName>
+        <description>The amount for the County Council.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please supply the amount for the County Council.</inlineHelpText>
+        <label>County Council Amount</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>District_Council_Amount__c</fullName>
+        <description>The amount for the District Council.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please supply the amount for the District Council.</inlineHelpText>
+        <label>District Council Amount</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Fire_And_Rescue_Amount__c</fullName>
+        <description>The Fire And Rescue Amount.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please supply the Fire And Rescue Amount.</inlineHelpText>
+        <label>Fire And Rescue Amount</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Police_And_Crime_Amount__c</fullName>
+        <description>The Police And Crime Amount.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please supply the Police And Crime Amount.</inlineHelpText>
+        <label>Police And Crime Amount</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Social_Care_Amount__c</fullName>
+        <description>The Social Care Amount.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please supply the Social Care Amount.</inlineHelpText>
+        <label>Social Care Amount</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Special_1_Amount__c</fullName>
+        <description>The 1st Special Amount.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please supply the 1st Special Amount.</inlineHelpText>
+        <label>Special 1 Amount</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Town_Council_Amount__c</fullName>
+        <description>The amount for the Town Council.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please supply the amount for the Town Council.</inlineHelpText>
+        <label>Town Council Amount</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <customSettingsType>List</customSettingsType>
+    <description>A custom setting to hold information about Council Tax Bands.</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Council Tax Band</label>
+    <visibility>Public</visibility>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Council_Tax_Band__c</columns>
+        <columns>Council_Tax_Year__c</columns>
+        <columns>Council_Tax_Amount__c</columns>
+        <columns>County_Council_Amount__c</columns>
+        <columns>District_Council_Amount__c</columns>
+        <columns>Town_Council_Amount__c</columns>
+        <columns>Fire_And_Rescue_Amount__c</columns>
+        <columns>Police_And_Crime_Amount__c</columns>
+        <columns>Social_Care_Amount__c</columns>
+        <columns>Special_1_Amount__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+</CustomObject>
