@@ -78,13 +78,4 @@
             <translation><!-- Recycling --></translation>
         </picklistValues>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>Route</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Routes</value>
-    </caseValues>
-    <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

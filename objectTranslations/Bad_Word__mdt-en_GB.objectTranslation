@@ -4,13 +4,4 @@
         <label><!-- Text to check --></label>
         <name>Text_to_check__c</name>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>Bad Word</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Bad Words</value>
-    </caseValues>
-    <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

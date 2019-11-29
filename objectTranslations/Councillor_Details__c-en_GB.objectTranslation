@@ -34,13 +34,4 @@
         <label><!-- Ward Code --></label>
         <name>Ward_Code__c</name>
     </fields>
-    <caseValues>
-        <plural>false</plural>
-        <value>Councillor Details</value>
-    </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Councillor Details</value>
-    </caseValues>
-    <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>
