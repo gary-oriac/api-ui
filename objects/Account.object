@@ -223,16 +223,6 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
-    <compactLayouts>
-        <fullName>arcuscrm__Arcus_CRM_Compact_Layout</fullName>
-        <fields>Name</fields>
-        <fields>Phone</fields>
-        <fields>arcshared__Company_Number__c</fields>
-        <fields>arcshared__Email__c</fields>
-        <fields>OwnerId</fields>
-        <fields>Website</fields>
-        <label>Arcus CRM Compact Layout</label>
-    </compactLayouts>
     <fields>
         <fullName>AccountNumber</fullName>
         <trackFeedHistory>false</trackFeedHistory>
@@ -410,26 +400,6 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
-    <fieldSets>
-        <fullName>SearchColumns</fullName>
-        <description>Define a set of fields to be used for SobjectSearch component.</description>
-        <displayedFields>
-            <field>Name</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>Site</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>arcshared__Email__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <label>SearchColumns</label>
-    </fieldSets>
     <listViews>
         <fullName>MyAccounts</fullName>
         <filterScope>Mine</filterScope>

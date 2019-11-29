@@ -1,8 +1,0 @@
-Dear {!Contact.Name},<br> 
-<br> 
-An application has been made for a {!arcusregserv__RS_Licence__c.RecordType} ({!arcusregserv__RS_Licence__c.arcusregserv__Type__c}), with reference {!arcusregserv__RS_Licence__c.Name}, and we welcome any representations you may wish to make. 
-<br> 
-<br> 
-Best regards,<br> 
-{!User.Name}<br> 
-{!User.Title}<br>

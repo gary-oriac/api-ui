@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Created by Lightning App Builder</description>
-    <flexiPage>BE_Mobile_Building_Control_App_Page</flexiPage>
-    <label>Building Control Inspections</label>
-    <motif>Custom24: Building</motif>
-</CustomTab>

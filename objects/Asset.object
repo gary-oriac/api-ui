@@ -97,15 +97,6 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
-    <compactLayouts>
-        <fullName>BE_Historic_Asset</fullName>
-        <fields>Name</fields>
-        <fields>RecordTypeId</fields>
-        <fields>Status</fields>
-        <fields>arcusbuiltenv__Date_First_Registered__c</fields>
-        <fields>arcusbuiltenv__Occupancy__c</fields>
-        <label>BE Historic Asset</label>
-    </compactLayouts>
     <fields>
         <fullName>AccountId</fullName>
         <trackFeedHistory>false</trackFeedHistory>

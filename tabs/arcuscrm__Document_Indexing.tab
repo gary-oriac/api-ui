@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
-    <auraComponent>arcuscrm__indexingDocumentIndexerAura</auraComponent>
-    <description>Allows documents in libraries to be related against Cases, Locations etc...</description>
-    <label>Document Indexing</label>
-    <motif>Custom7: Square</motif>
-</CustomTab>

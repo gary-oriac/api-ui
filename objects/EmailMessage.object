@@ -83,14 +83,6 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
-    <compactLayouts>
-        <fullName>BE5_Email_Compact</fullName>
-        <fields>Subject</fields>
-        <fields>RelatedToId</fields>
-        <fields>ToAddress</fields>
-        <fields>ValidatedFromAddress</fields>
-        <label>BE5 Email Compact</label>
-    </compactLayouts>
     <fields>
         <fullName>BccAddress</fullName>
     </fields>

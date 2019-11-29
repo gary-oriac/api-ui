@@ -321,16 +321,6 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
-    <compactLayouts>
-        <fullName>arcuscrm__CRM_Compact_Contact_Layout</fullName>
-        <fields>Name</fields>
-        <fields>Phone</fields>
-        <fields>Email</fields>
-        <fields>MobilePhone</fields>
-        <fields>arcuscrm__Is_Communication_Allowed__c</fields>
-        <fields>arcuscrm__Ward_Name__c</fields>
-        <label>CRM Compact Contact Layout</label>
-    </compactLayouts>
     <fields>
         <fullName>AccountId</fullName>
         <trackFeedHistory>true</trackFeedHistory>
@@ -373,18 +363,6 @@
         <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>FHDC_Department__c</fullName>
-        <externalId>false</externalId>
-        <label>Department</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetName>FHDC_Department_Global_Value_Set</valueSetName>
-        </valueSet>
     </fields>
     <fields>
         <fullName>FHDC_Extension__c</fullName>
@@ -580,26 +558,6 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
-    <fieldSets>
-        <fullName>SearchColumns</fullName>
-        <description>Define a set of fields to be used for SobjectSearch component.</description>
-        <displayedFields>
-            <field>Name</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>Email</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>arcusgazetteer__Correspondence_Print_Address__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <label>SearchColumns</label>
-    </fieldSets>
     <listViews>
         <fullName>BirthdaysThisMonth</fullName>
         <columns>FULL_NAME</columns>

@@ -1,4 +1,0 @@
-<apex:page controller="DSHLC_CustomisationCont" title="Customise Arcus DSH" setup="true">
-    <apex:sectionHeader title="Customise Arcus Products" subtitle="Arcus DSH"/>
-    <arcshared:AppConfigComp listOfCategories="{!categoryList}" />
-</apex:page>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Edit access to recommendation and decision</description>
-    <hasActivationRequired>false</hasActivationRequired>
-    <label>BE - Recommendation &amp; Decision - Edit</label>
-</PermissionSet>

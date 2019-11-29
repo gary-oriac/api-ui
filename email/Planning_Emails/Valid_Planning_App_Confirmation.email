@@ -1,8 +1,0 @@
-The Planning Application {!arcusbuiltenv__Planning_Application__c.Name}
-
-Submitted: {!arcusbuiltenv__Planning_Application__c.arcusbuiltenv__Received_Date__c}
-Validated: {!arcusbuiltenv__Planning_Application__c.Valid_Date__c}
-
-Was Valid on: {!arcusbuiltenv__Planning_Application__c.arcusbuiltenv__Valid_Date__c}
-
-The application is now being processed

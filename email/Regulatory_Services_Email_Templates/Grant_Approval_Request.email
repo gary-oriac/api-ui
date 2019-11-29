@@ -1,7 +1,0 @@
-A Grant or Loan has been submitted for approval.
-
-Value: {!arcusregserv__Grant__c.arcusregserv__Grant_Value__c}
-
-{!arcusregserv__Grant__c.arcusregserv__Limit_Exceeded_Information__c}
-
-See details and approve/reject here: {!ApprovalRequest.External_URL}

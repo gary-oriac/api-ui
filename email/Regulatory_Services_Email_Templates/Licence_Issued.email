@@ -1,8 +1,0 @@
-Dear {!Contact.Name},<br> 
-<br> 
-We are pleased to inform you we have granted your request for a {!arcusregserv__RS_Licence__c.RecordType}. It will expire on {!arcusregserv__RS_Licence__c.arcusregserv__End_Date_Granted__c}.
-<br> 
-<br> 
-Best regards,<br> 
-{!User.Name}<br> 
-{!User.Title}<br>

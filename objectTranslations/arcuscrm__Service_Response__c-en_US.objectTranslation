@@ -1,97 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fields>
-        <help><!-- Contact name and email address from case. --></help>
-        <label><!-- Case Contact --></label>
-        <name>arcuscrm__Case_Contact__c</name>
-    </fields>
-    <fields>
-        <help><!-- Case contact name and email address entered manually by the customer services agent if different details have been provided for the service response, or if the contact is not recorded accurately on the case. --></help>
-        <label><!-- Case Contact (manually entered) --></label>
-        <name>arcuscrm__Case_Contact_manually_entered__c</name>
-    </fields>
-    <fields>
-        <help><!-- Case owner --></help>
-        <label><!-- Case Owner --></label>
-        <name>arcuscrm__Case_Owner__c</name>
-    </fields>
-    <fields>
-        <help><!-- Status of the original case, will reflect the current value. --></help>
-        <label><!-- Case Status --></label>
-        <name>arcuscrm__Case_Status__c</name>
-    </fields>
-    <fields>
-        <help><!-- Subject of the original case carried through to service response --></help>
-        <label><!-- Case Subject --></label>
-        <name>arcuscrm__Case_Subject__c</name>
-    </fields>
-    <fields>
-        <label><!-- Case --></label>
-        <name>arcuscrm__Case__c</name>
-        <relationshipLabel><!-- Service Responses --></relationshipLabel>
-    </fields>
-    <fields>
-        <help><!-- The request should be resolved by this date, which is the case target resolution date and is based on agreed service levels. --></help>
-        <label><!-- Case Due Date --></label>
-        <name>arcuscrm__Due_Date__c</name>
-    </fields>
-    <fields>
-        <help><!-- Instructions for the allocated service on what is required from them to fulfill this customer request. --></help>
-        <label><!-- Instructions for the allocated service --></label>
-        <name>arcuscrm__Instructions_for_service__c</name>
-    </fields>
-    <fields>
-        <help><!-- Status of the Service Response, as set by the Adviser. --></help>
-        <label><!-- Response Status --></label>
-        <name>arcuscrm__Response_Status__c</name>
-        <picklistValues>
-            <masterLabel>Closed</masterLabel>
-            <translation><!-- Closed --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>In Progress with Adviser</masterLabel>
-            <translation><!-- In Progress with Adviser --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>New Request</masterLabel>
-            <translation><!-- New Request --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Response Draft Complete</masterLabel>
-            <translation><!-- Response Draft Complete --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
-        <label><!-- Response Type --></label>
-        <name>arcuscrm__Response_Type__c</name>
-        <picklistValues>
-            <masterLabel>Compliment Complaint Comment</masterLabel>
-            <translation><!-- Compliment Complaint Comment --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Data Protection Act</masterLabel>
-            <translation><!-- Data Protection Act --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Environmental Information Regulations</masterLabel>
-            <translation><!-- Environmental Information Regulations --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Freedom of Information Act</masterLabel>
-            <translation><!-- Freedom of Information Act --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Subject Access Request</masterLabel>
-            <translation><!-- Subject Access Request --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
-        <label><!-- Service Response Due Date --></label>
-        <name>arcuscrm__Service_Response_Due_Date__c</name>
-    </fields>
-    <fields>
-        <help><!-- This is the service response to the customer from the responder, based on their request which will either be an FOI, SAR, EIR or CCC (comment, complaint, compliment).
-The customer services agent should use this to respond to the customer appropriately. --></help>
-        <label><!-- Service response for customer --></label>
-        <name>arcuscrm__Service_Response_for_customer__c</name>
-    </fields>
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </CustomObjectTranslation>

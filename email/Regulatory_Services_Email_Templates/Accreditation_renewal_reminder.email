@@ -1,8 +1,0 @@
-Dear {!Contact.Salutation} {!Contact.FirstName} {!Contact.LastName}, </p>
-<br>
-With regards to your selective licence for the above property, our records shows your membership of your landlords association was due for renewal on  {!Contact.arcusregserv__Accreditation_Expiry_Date__c}.<br>
- <br>
-A condition of paying the discounted fee for your licence is that you maintain your accredited membership and provide proof of this annually.  Please, therefore  provide a copy of your membership renewal  within the next 7 days.<br>
- <br>
-Housing Enforcement Team<br>
-Peterborough City Council

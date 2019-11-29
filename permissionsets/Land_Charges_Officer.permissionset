@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?><PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Read/Write access to all things needed to use the Arcus Local Land Charges product.</description>
-    <hasActivationRequired>false</hasActivationRequired>
-    <label>Land Charges Officer</label>
-</PermissionSet>

@@ -1,79 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fields>
-        <help><!-- The additional details for the flag. Must be completed when other is entered for the type. --></help>
-        <label><!-- Additional Details --></label>
-        <name>arcuscrm__Additional_Details__c</name>
-    </fields>
-    <fields>
-        <help><!-- Any additional comments about the status flag --></help>
-        <label><!-- Comments --></label>
-        <name>arcuscrm__Comments__c</name>
-    </fields>
-    <fields>
-        <help><!-- The person to which the flag relates. --></help>
-        <label><!-- Related Person --></label>
-        <name>arcuscrm__Related_Person__c</name>
-        <relationshipLabel><!-- Person Status Flags --></relationshipLabel>
-    </fields>
-    <fields>
-        <label><!-- Sub type --></label>
-        <name>arcuscrm__Sub_type__c</name>
-        <picklistValues>
-            <masterLabel>Councillor</masterLabel>
-            <translation><!-- Councillor --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Hearing Impaired</masterLabel>
-            <translation><!-- Hearing Impaired --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>MP</masterLabel>
-            <translation><!-- MP --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Non English Speaker</masterLabel>
-            <translation><!-- Non English Speaker --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Other</masterLabel>
-            <translation><!-- Other --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Physically Disabled</masterLabel>
-            <translation><!-- Physically Disabled --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Two Officers Required</masterLabel>
-            <translation><!-- Two Officers Required --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Visually Impaired</masterLabel>
-            <translation><!-- Visually Impaired --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
-        <help><!-- The type of the warning flag, controls the specific flag field. --></help>
-        <label><!-- Type --></label>
-        <name>arcuscrm__Type__c</name>
-        <picklistValues>
-            <masterLabel>Behavioural Warning</masterLabel>
-            <translation><!-- Behavioural Warning --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Challenge to Service Access</masterLabel>
-            <translation><!-- Challenge to Service Access --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Impairment</masterLabel>
-            <translation><!-- Impairment --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Position of Responsibility</masterLabel>
-            <translation><!-- Position of Responsibility --></translation>
-        </picklistValues>
-    </fields>
-    <validationRules>
-        <errorMessage><!-- If you have selected the sub-type as Other, please provide more details to indicate the reason for person status. --></errorMessage>
-        <name>arcuscrm__Must_complete_add_dets_if_sub_type_other</name>
-    </validationRules>
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
 </CustomObjectTranslation>

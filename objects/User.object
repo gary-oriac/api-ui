@@ -196,18 +196,6 @@
         <type>Default</type>
     </actionOverrides>
     <fields>
-        <fullName>FHDC_Department__c</fullName>
-        <externalId>false</externalId>
-        <label>Department</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetName>FHDC_Department_Global_Value_Set</valueSetName>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>FHDC_Job_Title__c</fullName>
         <externalId>false</externalId>
         <label>Job Title</label>

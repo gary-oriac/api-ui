@@ -1,101 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fields>
-        <help><!-- The broad part of the system that the configuration item relates to. --></help>
-        <label><!-- Category --></label>
-        <name>arcuscrm__Category__c</name>
-        <picklistValues>
-            <masterLabel>CRM</masterLabel>
-            <translation><!-- CRM --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Core</masterLabel>
-            <translation><!-- Core --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Integration</masterLabel>
-            <translation><!-- Integration --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>MyAccount</masterLabel>
-            <translation><!-- MyAccount --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Security</masterLabel>
-            <translation><!-- Security --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Staff Hub</masterLabel>
-            <translation><!-- Staff Hub --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Training</masterLabel>
-            <translation><!-- Training --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
-        <label><!-- Configuration Target --></label>
-        <name>arcuscrm__Configuration_Target__c</name>
-    </fields>
-    <fields>
-        <label><!-- Configuration Type --></label>
-        <name>arcuscrm__Configuration_Type__c</name>
-        <picklistValues>
-            <masterLabel>Flow</masterLabel>
-            <translation><!-- Flow --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Lightning Component</masterLabel>
-            <translation><!-- Lightning Component --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>URL</masterLabel>
-            <translation><!-- URL --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
-        <help><!-- The URL to take the user to (in a new tab) where they can enter the config info. This could be the URL of a flow. --></help>
-        <label><!-- Configuration URL --></label>
-        <name>arcuscrm__Configuration_URL__c</name>
-    </fields>
-    <fields>
-        <help><!-- A short description of the configuration item and its purpose. --></help>
-        <label><!-- Description --></label>
-        <name>arcuscrm__Description__c</name>
-    </fields>
-    <fields>
-        <help><!-- A full or relative URL that references a page with guidance for how to complete the configuration --></help>
-        <label><!-- Guidance URL --></label>
-        <name>arcuscrm__Guidance_URL__c</name>
-    </fields>
-    <fields>
-        <help><!-- Provides guidance around how to complete the necessary configuration --></help>
-        <label><!-- Guidance --></label>
-        <name>arcuscrm__Guidance__c</name>
-    </fields>
-    <fields>
-        <help><!-- The order in which a service will appear on the Services page (1 is first, 2 is second, etc.). --></help>
-        <label><!-- Ranking --></label>
-        <name>arcuscrm__Ranking__c</name>
-    </fields>
-    <fields>
-        <help><!-- The current status of the configuration item, ie whether it has been configured yet. --></help>
-        <label><!-- Status --></label>
-        <name>arcuscrm__Status__c</name>
-        <picklistValues>
-            <masterLabel>Configured</masterLabel>
-            <translation><!-- Configured --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Issue with Configuration</masterLabel>
-            <translation><!-- Issue with Configuration --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Not Required</masterLabel>
-            <translation><!-- Not Required --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>To Configure</masterLabel>
-            <translation><!-- To Configure --></translation>
-        </picklistValues>
-    </fields>
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </CustomObjectTranslation>

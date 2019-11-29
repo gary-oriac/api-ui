@@ -1,20 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fields>
-        <caseValues>
-            <plural>false</plural>
-            <value>Job Title</value>
-        </caseValues>
-        <name>title_contact</name>
-        <startsWith>Consonant</startsWith>
-    </fields>
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
     <fields>
         <label><!-- External ID --></label>
         <name>External_ID__c</name>
     </fields>
-    <fields>
-        <label><!-- Department --></label>
-        <name>FHDC_Department__c</name>
-    </fields>
+    
     <fields>
         <label><!-- Extension --></label>
         <name>FHDC_Extension__c</name>
@@ -55,68 +45,18 @@
         <label><!-- Ward Name --></label>
         <name>Ward_Name__c</name>
     </fields>
-    <fields>
-        <help><!-- If contact is marked as deceased, display a red flag. 
-If contact is not marked as deceased, display a green flag. --></help>
-        <label><!-- Contact Deceased --></label>
-        <name>arcuscrm__Contact_Deceased__c</name>
-    </fields>
-    <fields>
-        <help><!-- Check this box to mark the contact as deceased and not contactable. This will display a flag icon dependent on this status. --></help>
-        <label><!-- Contact is Deceased? --></label>
-        <name>arcuscrm__Contact_is_Deceased__c</name>
-    </fields>
-    <fields>
-        <help><!-- Enter the date that the contact was marked as deceased, or the actual date of decease. --></help>
-        <label><!-- Date of Death --></label>
-        <name>arcuscrm__Date_of_Deceased_Status__c</name>
-    </fields>
-    <fields>
-        <help><!-- Do not attempt to contact this person, they are probably deceased. --></help>
-        <label><!-- Do Not Contact --></label>
-        <name>arcuscrm__Do_Not_Contact__c</name>
-    </fields>
-    <fields>
-        <help><!-- Green flag means the contact can be contacted, red flag means they should not be contacted. --></help>
-        <label><!-- Is Communication Allowed? --></label>
-        <name>arcuscrm__Is_Communication_Allowed__c</name>
-    </fields>
-    <fields>
-        <help><!-- The user record which is linked to this contact. Used for members of staff. --></help>
-        <label><!-- Linked Internal User --></label>
-        <name>arcuscrm__Linked_Internal_User__c</name>
-        <relationshipLabel><!-- Contacts (Linked Internal User) --></relationshipLabel>
-    </fields>
-    <fields>
-        <help><!-- Checked to record that the contact has no fixed abode. Results on a flag being displayed on the contact detail. --></help>
-        <label><!-- No Fixed Abode --></label>
-        <name>arcuscrm__No_Fixed_Abode__c</name>
-    </fields>
-    <fields>
-        <help><!-- indicates the contact is registered for Assisted Waste Collections --></help>
-        <label><!-- SYSTEM Registered: Assisted Collection --></label>
-        <name>arcuscrm__SYSTEM_Registered_Assisted_Collection__c</name>
-    </fields>
-    <fields>
-        <help><!-- Indicates that the contact is registered for Clinical Collections --></help>
-        <label><!-- SYSTEM Registered: Clinical Collection --></label>
-        <name>arcuscrm__SYSTEM_Registered_Clinical_Collection__c</name>
-    </fields>
-    <fields>
-        <label><!-- Ward Name --></label>
-        <name>arcuscrm__Ward_Name__c</name>
-    </fields>
-    <fieldSets>
-        <label><!-- SearchColumns --></label>
-        <name>SearchColumns</name>
-    </fieldSets>
-    <layouts>
-        <layout>BE Contact</layout>
-        <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
-        </sections>
-    </layouts>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <recordTypes>
         <description><!-- Represents a contact that is an officer of the council and can raise internal cases. --></description>
         <label><!-- Council Officer --></label>
@@ -135,10 +75,7 @@ If contact is not marked as deceased, display a green flag. --></help>
         <errorMessage><!-- You cannot modify Contact Name --></errorMessage>
         <name>FHDC_Prevent_Update_of_Name</name>
     </validationRules>
-    <validationRules>
-        <errorMessage><!-- If the contact is deceased, then ensure that the deceased box is checked and the date is input. --></errorMessage>
-        <name>arcuscrm__Deceased_date_is_required</name>
-    </validationRules>
+    
     <webLinks>
         <label><!-- GoogleMaps --></label>
         <name>GoogleMaps</name>

@@ -1,9 +1,0 @@
-public with sharing class ArcI_ConnCompaniesHouseMain_Mock  extends arcshared.ArcI_ConnMain_Mock
-{
-	public static final String REGISTERED_COMPANY_NUMBER = '88888888';
-
-    public override String getResponseBody(ResponseType pResponseType)
-    {
-        return '{"has_been_liquidated":false,"undeliverable_registered_office_address":false,"type":"ltd","date_of_creation":"2009-06-29","sic_codes":["84110"],"company_number":"'+REGISTERED_COMPANY_NUMBER+'","jurisdiction":"england-wales","last_full_members_list_date":"2016-06-29","registered_office_address":{"address_line_2":"Kings Hedges Road","region":"Cambridgeshire","postal_code":"CB4 2HY","address_line_1":"Future Business Centre","locality":"Cambridge"},"accounts":{"last_accounts":{"period_end_on":"2018-06-30","period_start_on":"2017-07-01","type":"full","made_up_to":"2018-06-30"},"next_due":"2020-03-31","overdue":false,"next_made_up_to":"2019-06-30","next_accounts":{"due_on":"2020-03-31","overdue":false,"period_end_on":"2019-06-30","period_start_on":"2018-07-01"},"accounting_reference_date":{"day":"30","month":"06"}},"company_name":"ARCUS GLOBAL LIMITED","etag":"f12345670c51afef707c475fc35004a12b4cd5ef6","has_insolvency_history":false,"company_status":"active","has_charges":true,"confirmation_statement":{"next_made_up_to":"2020-06-29","overdue":false,"last_made_up_to":"2019-06-29","next_due":"2020-07-13"},"links":{"self":"/company/'+REGISTERED_COMPANY_NUMBER+'","filing_history":"/company/'+REGISTERED_COMPANY_NUMBER+'/filing-history","officers":"/company/'+REGISTERED_COMPANY_NUMBER+'/officers","charges":"/company/'+REGISTERED_COMPANY_NUMBER+'/charges","persons_with_significant_control":"/company/'+REGISTERED_COMPANY_NUMBER+'/persons-with-significant-control"},"registered_office_is_in_dispute":false,"can_file":true}';
-    }
-}

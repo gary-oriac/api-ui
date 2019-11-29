@@ -1,8 +1,0 @@
-Dear {!Contact.Name},<br>
-<br>
-Your fee of £{!arcusregserv__RS_Activity__c.arcusregserv__Fees_Outstanding__c} for the {!arcusregserv__RS_Activity__c.arcusregserv__Licence__r.RecordType.Name} {!arcusregserv__RS_Activity__c.arcusregserv__Licence__r.Name} is due on {!arcusregserv__RS_Activity__c.arcusregserv__Due_Date__c}.
-<br>
-<br>
-Best regards,<br>
-{!User.Name}<br>
-{!User.Title}<br>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
-    <auraComponent>ARC_CRM_QuickReportIt</auraComponent>
-    <description>Tab to provide a map interface and form to report street scene issues</description>
-    <label>Street Issue</label>
-    <motif>Custom59: Can</motif>
-</CustomTab>
